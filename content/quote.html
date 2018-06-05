@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Request a Quote</title>
+	<link href="../styles.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="#"><!-- used for icon in tab-->
+	<!--<script src="//use.edgefonts.net/josefin-sans;source-sans-pro.js"></script><!--global fonts-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--import jquery-->
+	<script src="../js/dropDown.js"></script><!--javascript toggle for nav links-->
+	<script src="../js/navScroll.js"></script><!--javascript toggle for nav when scrolling up or down-->
+</head>
+
+<body>
+    
+	<div class="pagewrap" id="quotepage">
+	
+		<header>	
+			<!-- navigation-->
+			<nav id="nav" class="visible">
+				<div id="phoneicon">
+					<a href="tel:5852453226">&#x2706;</a>
+				</div>
+				<div id="navbutton" onclick="dropDown();">
+					<div class="buttonline"></div>
+					<div class="buttonline"></div>
+					<div class="buttonline"></div>
+				</div>
+				<ul id="navlist" class="hidden">
+					<li>
+						<a href='../index.html'>Home</a>
+					</li>
+					<li>
+						<a href='quote.html'>Request A Quote</a>
+					</li>
+					<li>
+						<a href='services.html'>Services</a>
+					</li>
+					<li>
+						<a href='howitworks.html'>How it Works</a>
+					</li>
+					<li>
+						<a href='pricing.html'>Pricing</a>
+					</li>
+					<li>
+						<a href="tel:5852453226">Call Today! (585) 245-3226</a>
+					</li>
+				</ul>
+			</nav><!--closes nav-->
+			
+			<!-- address, contact info-->
+			<div id="headerinfo">
+				<ul>
+					<li>
+						<p>Joe's Service &amp; Towing</p>
+					</li>
+					<li>
+						<p>Mobile Automotive Repair &amp; Towing</p>
+					</li>
+					<li>
+						<a href="tel:5852453226">(585) 245-3226</a>
+					</li>
+					<li>
+						<a href="mailto:joesservice2018@gmail.com">joesservice2018@gmail.com</a>
+					</li>
+				</ul>
+			</div>
+			
+		</header><!--closes header-->
+		
+		<form action="send_form_email.php" method="POST" target = "_blank" >
+  			<!--text inputs-->
+  			<fieldset>
+    			<legend class="legendheader"><h3>Contact Information</h3></legend>
+  			 		<div id="namediv" class="infotile">
+   			 			<label id="firstnamelabel">Name:<input id="nameinput" type="text" name="clientname" size="40%" maxlength="70" required></label>
+    		 			<label id="addresslabel">Address:<input id="addressinput" type="text" name="clientaddress" size="40%" maxlength="70" required></label>
+   			 			<label id="emaillabel">Email:<input id="emailinput" type="email" name="email" size="25" maxlength="60" required></label>
+   			 			<label id="phonelabel">Phone:<input id="phoneinput" type="text" name="phone" size="25" maxlength="12" required></label><br/>
+   			 		</div><!--closes namediv-->
+  			</fieldset>
+  			
+  			<fieldset>
+  				<legend class="legendheader"><h3>What type of services are you looking for?</h3></legend>
+  					<div id="servicetype">
+  						<input type="hidden" name="drivewayrepair" value="No">
+  						<label id="drivewayrepairlabel">Driveway Repair<input id="drivewayrepairinput" type="checkbox" name="drivewayrepair" value="Yes"></label>
+  						<input type="hidden" name="emergencyroadside" value="No">
+  						<label id="emergencyroadsidelabel">Emergency Roadside<input id="emergencyinput" type="checkbox" name="emergencyroadside" value="Yes"></label>
+  						<input type="hidden" name="other" value="No">
+  						<label id="otherlabel">Other<input id="otherinput" type="checkbox" name="other" value="Yes"></label>
+  					</div><!--closes servicetype-->
+  			</fieldset>
+  			
+  			<fieldset id="comments">
+  				<legend class="legendheader"><h3>If other, please describe:</h3></legend>	
+  					<div id="textareadiv">
+	  		 			<textarea id="comments" name="comments" rows="4" cols="70" class="textbox"></textarea>
+	  		 		</div><!--closes textareadiv-->
+  			</fieldset>
+  			
+				<div id="formbuttons">
+					<!--submit button-->
+					<input id="submitbutton" type="submit" value="Submit"> 
+					<input id="clearbutton" type="reset">
+				</div>
+			</form><!--end of form-->
+		
+		<footer>
+			<!-- address, contact info-->
+			<div>
+				<ul>
+					<li>
+						<p>Joe's Service &amp; Towing</p>
+					</li>
+					<li>
+						<p>Mobile Automotive Repair &amp; Towing</p>
+					</li>
+					<li>
+						<p>Serving the Western New York and Finger Lakes Regions</p>
+					</li>
+					<li>
+						<a href="tel:5852453226">(585) 245-3226</a>
+					</li>
+					<li>
+						<a href="mailto:joesservice2018@gmail.com">joesservice2018@gmail.com</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+		
+	</div><!--closes pagewrap-->
+		
+		
+</body>
+</html>
