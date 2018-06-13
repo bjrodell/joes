@@ -4,98 +4,103 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Joes</title>
-	<link href="styles.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="#"><!-- used for icon in tab-->
-	<!--<script src="//use.edgefonts.net/josefin-sans;source-sans-pro.js"></script><!--global fonts-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--import jquery-->
+	
+	<!--BOOTSTRAP 4-->
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+	
+	<!--site specific style sheet-->
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	
+	<script src="//use.edgefonts.net/josefin-sans;source-sans-pro.js"></script><!--global fonts-->
 	<script src="js/dropDown.js"></script><!--javascript toggle for nav links-->
 	<script src="js/navScroll.js"></script><!--javascript toggle for nav when scrolling up or down-->
+	
 </head>
 
 <body>
     
-	<div class="pagewrap">
-	
+	<div class="container-fluid">
 		<header>
-			<img src="media/wrench.jpeg">
-			<!-- navigation-->
-			<nav id="nav" class="visible">
 			
-				<div id="phoneicon">
-					<a href="tel:5852453226">&#x2706;</a>
-				</div>
-				<div id="navbutton" onclick="dropDown();">
-					<div class="buttonline"></div>
-					<div class="buttonline"></div>
-					<div class="buttonline"></div>
-				</div>
-				<ul id="navlist" class="hidden">
-					<li>
-						<a href='index.html'>Home</a>
-					</li>
-					<li>
+			<!-- navigation-->
+			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light">
+			
+				<a class="navbar-brand" href='index.html'>Home</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
 						<a href='content/quote.html'>Request A Quote</a>
 					</li>
-					<li>
+					<li class="nav-item">
 						<a href='content/services.html'>Services</a>
 					</li>
-					<li>
+					<li class="nav-item">
 						<a href='content/howitworks.html'>How it Works</a>
 					</li>
-					<li>
+					<li class="nav-item">
 						<a href='content/pricing.html'>Pricing</a>
 					</li>
-					<li>
+					<li class="nav-item">
 						<a href="tel:5852453226">Call Today! (585) 245-3226</a>
 					</li>
 				</ul>
+				</div><!-- closes collapse div-->
 			</nav><!--closes nav-->
 			
-			<!-- address, contact info-->
-			<div id="headerinfo">
-				<ul>
-					<li>
-						<p>Joe's Service &amp; Towing</p>
-					</li>
-					<li>
-						<p>Mobile Automotive Repair &amp; Towing</p>
-					</li>
-					<li>
-						<a href="tel:5852453226">(585) 245-3226</a>
-					</li>
-					<li>
-						<a href="mailto:joesservice2018@gmail.com">joesservice2018@gmail.com</a>
-					</li>
-				</ul>
+			<div id="headerinfo" class="card">
+				<img src="media/wrench.jpeg">
+				<div class="card-img-overlay">
+					<h2>Joe's Service &amp; Towing</h2>
+					<h5>Mobile Automotive Repair &amp; Towing</h5>
+					<h6><a href="tel:5852453226">(585) 245-3226</a></h6>
+					<h6><a href="mailto:joesservice2018@gmail.com">joesservice2018@gmail.com</a></h6>
+				</div>
+				<div class="card-footer">
+					<h4>The mobile mechanic that comes to you!</h4>
+					<a class="btn btn-info" href="content/quote.html">Request A Quote</a>
+				</div>
 			</div>
-			
-			<div id="headerbutton">
-				<a class="button_nobackground_black button_lowerright_small" href="content/quote.html">Request A Quote</a>
-			</div>
-			
-			<div id="headertagline">
-				<h2>The Mobile Mechanic That Comes To You</h2>
-			</div>
-			
 		</header><!--closes header-->
 		
-		<div class="infotile darktile paragraph_centerleft header_upperleft">
-			<img src="media/undercar.jpg">
-			<h3>Our Mission</h3>
-			<p id="missionparagraph" style="line-height:170%; font-weight:bold;">Our mission is to provide low cost, quality car repair while you sit in the comfort of your own home.</p>
-			<a class="button_nobackground_white button_lowercenter_small" href="content/quote.html">Request A Quote</a>
+		<div class="card">
+			<div class="card-header">
+				<h3 class="card-title">Our Mission</h3>
+			</div>
+			<div class="card-body">
+				<img src="media/undercar.jpg" class="card-img-top">
+				<p class="card-text text-center">Our mission is to provide low cost, quality car repair while you sit in the comfort of your own home.</p>
+				<a href="content/quote.html" class="btn btn-info">Request A Quote</a>
+			</div>
 		</div>
 		
-		<div class="infotile lighttile paragraph_lowercenter header_upperleft">
-			<img src="media/brokendown.jpg">
-			<h3 style="top:2%;">Services</h3>
-			<p></p>
-			<a class="button_nobackground_white button_lowerright_small" href="content/services.html">View Our Services</a>
+		<div class="card">
+			<div class="card-header">
+				<h3 class="card-title">Services</h3>
+			</div>
+			<div class="card-body">
+				<img src="media/brokendown.jpg" class="card-img-top">
+				<p>Please check out our array of services.</p>
+				<a href="content/services.html" class="btn btn-info" >View Our Services</a>
+			</div>
 		</div>
 		
 		<footer>
 			<!-- address, contact info-->
-			<div>
+			<div class="card">
 				<ul>
 					<li>
 						<p>Joe's Service &amp; Towing</p>
