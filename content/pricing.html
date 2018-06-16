@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Pricing</title>
-	<link href="../styles.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="#"><!-- used for icon in tab-->
 	
 	<!--BOOTSTRAP 4-->
@@ -17,6 +16,9 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	
+	<!-- site specific style sheet-->
+	<link href="../styles.css" rel="stylesheet" type="text/css">
+	
 	<script src="//use.edgefonts.net/josefin-sans;source-sans-pro.js"></script><!--global fonts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--import jquery-->
 	<script src="../js/dropDown.js"></script><!--javascript toggle for nav links-->
@@ -25,57 +27,52 @@
 
 <body>
     
-	<div class="pagewrap">
+	<div class="container-fluid">
 	
 		<header>	
 			<!-- navigation-->
-			<nav id="nav" class="visible">
-				<div id="phoneicon">
-					<a href="tel:5852453226">&#x2706;</a>
-				</div>
-				<div id="navbutton" onclick="dropDown();">
-					<div class="buttonline"></div>
-					<div class="buttonline"></div>
-					<div class="buttonline"></div>
-				</div>
-				<ul id="navlist" class="hidden">
-					<li>
+			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light">
+			
+				<a class="navbar-brand" href='#'>How It Works</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
 						<a href='../index.html'>Home</a>
 					</li>
-					<li>
+					<li class="nav-item">
 						<a href='quote.html'>Request A Quote</a>
 					</li>
-					<li>
+					<li class="nav-item">
 						<a href='services.html'>Services</a>
 					</li>
-					<li>
-						<a href='howitworks.html'>How it Works</a>
+					<li class="nav-item">
+						<a href='howitworks.html'>How it works</a>
 					</li>
-					<li>
-						<a href='pricing.html'>Pricing</a>
-					</li>
-					<li>
+					<li class="nav-item">
 						<a href="tel:5852453226">Call Today! (585) 245-3226</a>
 					</li>
 				</ul>
+				</div><!-- closes collapse div-->
 			</nav><!--closes nav-->
 			
-			<!-- address, contact info-->
-			<div id="headerinfo">
-				<ul>
-					<li>
-						<p>Joe's Service &amp; Towing</p>
-					</li>
-					<li>
-						<p>Mobile Automotive Repair &amp; Towing</p>
-					</li>
-					<li>
-						<a href="tel:5852453226">(585) 245-3226</a>
-					</li>
-					<li>
-						<a href="mailto:joesservice2018@gmail.com">joesservice2018@gmail.com</a>
-					</li>
-				</ul>
+			<div id="headerinfo" class="card">
+				<img src="../media/wrench.jpeg">
+				<div class="card-img-overlay">
+					<h2>Joe's Service &amp; Towing</h2>
+					<h5>Mobile Automotive Repair &amp; Towing</h5>
+					<h6><a href="tel:5852453226">(585) 245-3226</a></h6>
+					<h6><a href="mailto:joesservice2018@gmail.com">joesservice2018@gmail.com</a></h6>
+				</div>
+				<div class="card-footer">
+					<h4>The mobile mechanic that comes to you!</h4>
+					<a class="btn btn-info" href="content/quote.html">Request A Quote</a>
+				</div>
 			</div>
 		</header><!--closes header-->
 		
