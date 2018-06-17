@@ -253,112 +253,6 @@ footer a {
 	background-color:#6b869b;
 }
 
-form {
-	width:90%;
-	position:relative;
-}
-
-fieldset {
-	border:none;
-	margin-bottom:4%;
-}
-
-legend {
-	color:#dddbdc;
-	margin-left:7%;
-}
-
-label {
-	display:block;
-	margin-top:5%;
-	margin-left:13%;
-	color:#dddbdc;
-	font-size:1.2em;
-}
-
-input {
-	max-width:70%;
-	}
-
-input,textarea{
-	margin-left:5%;
-	border-radius:20px;
-	border:none;
-	font-size:1.0em;
-	padding:2%;
-}
-
-input:focus {
-	outline:0;
-}
-
-#nameinput {
-	margin-left:8%;
-}
-
-#addressinput {
-	margin-left:3%;
-}
-
-#emailinput {
-	margin-left:9%;
-}
-
-#phoneinput {
-	margin-left:8%;
-}
-
-#drivewayrepairinput, #otherinput, #emergencyinput {
-	float:right;
-}
-
-#drivewayrepairlabel, #otherlabel, #emergencyroadsidelabel {
-	width:70%;
-}
-
-#drivewayrepairinput {
-	margin-left:12%;
-}
-
-#otherinput {
-	margin-left:29%;
-}
-
-textarea {
-	width:70%;
-	margin-top:5%;
-	margin-left:20%;
-}
-
-#submitbutton, #clearbutton {
-	background:none;
-	color:#dddbdc;
-	border:3px solid #dddbdc;
-	padding:5%;
-	margin:5%;
-	width:50%;
-	margin-left:25%;
-}
-
-#formbuttons {
-	width:50%;
-	margin-left:30%;
-}
-
-#servicetype label input {
-	height:20px;
-	width:20px;
-}
-
-#drivewayrepairinput {
-	margin-left:16%;
-}
-
-#otherinput {
-	margin-left:42%;
-}
-
-
 /******** beginning of large screen styles***/
 
 @media screen and (min-width: 750px){
@@ -425,14 +319,6 @@ textarea {
 		margin-bottom:0;
 	}
 	
-	#drivewayrepairlabel, #otherlabel, #emergencyroadsidelabel {
-	width:40%;
-	}
 
-	#phoneicon {
-	width:5%;
-	height:9%;
-	left:77%;
-	}
 
 }

@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Request a Quote</title>
-	<link href="../styles.css" rel="stylesheet" type="text/css">
 	<link rel="icon" href="#"><!-- used for icon in tab-->
 	
 	<!--BOOTSTRAP 4-->
@@ -17,110 +16,132 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	
+	<!--site specific styles-->
+	<link href="../styles.css" rel="stylesheet" type="text/css">
+	
 	<script src="//use.edgefonts.net/josefin-sans;source-sans-pro.js"></script><!--global fonts-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--import jquery-->
-	<script src="../js/dropDown.js"></script><!--javascript toggle for nav links-->
-	<script src="../js/navScroll.js"></script><!--javascript toggle for nav when scrolling up or down-->
 </head>
 
 <body>
     
-	<div class="pagewrap" id="quotepage">
+	<div class="container-fluid">
 	
 		<header>	
 			<!-- navigation-->
-			<nav id="nav" class="visible">
-				<div id="phoneicon">
-					<a href="tel:5852453226">&#x2706;</a>
-				</div>
-				<div id="navbutton" onclick="dropDown();">
-					<div class="buttonline"></div>
-					<div class="buttonline"></div>
-					<div class="buttonline"></div>
-				</div>
-				<ul id="navlist" class="hidden">
-					<li>
+			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light">
+			
+				<a class="navbar-brand" href='#'>Request a Quote</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
 						<a href='../index.html'>Home</a>
 					</li>
-					<li>
-						<a href='quote.html'>Request A Quote</a>
-					</li>
-					<li>
-						<a href='services.html'>Services</a>
-					</li>
-					<li>
-						<a href='howitworks.html'>How it Works</a>
-					</li>
-					<li>
+					<li class="nav-item">
 						<a href='pricing.html'>Pricing</a>
 					</li>
-					<li>
+					<li class="nav-item">
+						<a href='services.html'>Services</a>
+					</li>
+					<li class="nav-item">
+						<a href='howitworks.html'>How it works</a>
+					</li>
+					<li class="nav-item">
 						<a href="tel:5852453226">Call Today! (585) 245-3226</a>
 					</li>
 				</ul>
+				</div><!-- closes collapse div-->
 			</nav><!--closes nav-->
 			
-			<!-- address, contact info-->
-			<div id="headerinfo">
-				<ul>
-					<li>
-						<p>Joe's Service &amp; Towing</p>
-					</li>
-					<li>
-						<p>Mobile Automotive Repair &amp; Towing</p>
-					</li>
-					<li>
-						<a href="tel:5852453226">(585) 245-3226</a>
-					</li>
-					<li>
-						<a href="mailto:joesservice2018@gmail.com">joesservice2018@gmail.com</a>
-					</li>
-				</ul>
+			<div id="headerinfo" class="card">
+				<img src="../media/wrench.jpeg">
+				<div class="card-img-overlay">
+					<h2>Joe's Service &amp; Towing</h2>
+					<h5>Mobile Automotive Repair &amp; Towing</h5>
+					<h6><a href="tel:5852453226">(585) 245-3226</a></h6>
+					<h6><a href="mailto:joesservice2018@gmail.com">joesservice2018@gmail.com</a></h6>
+				</div>
+				<div class="card-footer">
+					<h4>The mobile mechanic that comes to you!</h4>
+					<a class="btn btn-info" href="content/quote.html">Request A Quote</a>
+				</div>
 			</div>
-			
 		</header><!--closes header-->
 		
 		<form action="send_form_email.php" method="POST" target = "_blank" >
   			<!--text inputs-->
   			<fieldset>
     			<legend class="legendheader"><h3>Contact Information</h3></legend>
-  			 		<div id="namediv" class="infotile">
-   			 			<label id="firstnamelabel">Name:<input id="nameinput" type="text" name="clientname" size="40%" maxlength="70" required></label>
-    		 			<label id="addresslabel">Address:<input id="addressinput" type="text" name="clientaddress" size="40%" maxlength="70" required></label>
-   			 			<label id="emaillabel">Email:<input id="emailinput" type="email" name="email" size="25" maxlength="60" required></label>
-   			 			<label id="phonelabel">Phone:<input id="phoneinput" type="text" name="phone" size="25" maxlength="12" required></label><br/>
-   			 		</div><!--closes namediv-->
+					<div class="form-row">
+							<label for="nameinput" class="col-3">Name:</label>
+							<input id="nameinput" class="col-6" type="text" name="clientname" maxlength="70" required>
+					</div>
+					<div class="form-row">
+							<label for="addressinput" class="col-3">Address:</label>
+							<input id="addressinput" class="col-6" type="text" name="clientaddress"maxlength="70" required>
+					</div>
+					<div class="form-row">
+							<label for="emailinput" class="col-3">Email:</label>
+							<input id="emailinput" class="col-6" type="email" name="email" maxlength="60" required>
+					</div>
+					<div class="form-row">
+							<label for="phoneinput" class="col-3">Phone:</label>
+							<input id="phoneinput" class="col-6" type="text" name="phone" maxlength="12" required>
+					</div>
   			</fieldset>
   			
   			<fieldset>
-  				<legend class="legendheader"><h3>What type of services are you looking for?</h3></legend>
-  					<div id="servicetype">
-  						<input type="hidden" name="drivewayrepair" value="No">
-  						<label id="drivewayrepairlabel">Driveway Repair<input id="drivewayrepairinput" type="checkbox" name="drivewayrepair" value="Yes"></label>
-  						<input type="hidden" name="emergencyroadside" value="No">
-  						<label id="emergencyroadsidelabel">Emergency Roadside<input id="emergencyinput" type="checkbox" name="emergencyroadside" value="Yes"></label>
-  						<input type="hidden" name="other" value="No">
-  						<label id="otherlabel">Other<input id="otherinput" type="checkbox" name="other" value="Yes"></label>
-  					</div><!--closes servicetype-->
+  				<legend><h3>What type of services are you looking for?</h3></legend>
+					    <div class="form-row">
+							<input type="hidden" name="drivewayrepair" value="No">
+							<label class="col-5" id="drivewayrepairlabel">Driveway Repair</label>
+							<div class="col-6">
+								<input class="form-check-input" id="drivewayrepairinput" type="checkbox" name="drivewayrepair" value="Yes">
+							</div>
+						</div>
+						
+						<div class="form-row">
+							<input type="hidden" name="emergencyroadside" value="No">
+							<label class="col-5" id="emergencyroadsidelabel">Emergency Roadside</label>
+							<div class="col-6">
+								<input class="form-check-input" id="emergencyinput" type="checkbox" name="emergencyroadside" value="Yes">
+							</div>
+						</div>
+  						
+						<div class="form-row">
+							<input type="hidden" name="other" value="No">
+							<label class="col-5" id="otherlabel">Other</label>
+							<div class="col-6">
+								<input class="form-check-input" id="otherinput" type="checkbox" name="other" value="Yes">
+							</div>
+						</div>
   			</fieldset>
   			
   			<fieldset id="comments">
-  				<legend class="legendheader"><h3>If other, please describe:</h3></legend>	
-  					<div id="textareadiv">
-	  		 			<textarea id="comments" name="comments" rows="4" cols="70" class="textbox"></textarea>
-	  		 		</div><!--closes textareadiv-->
+  				<legend><h3>If other, please describe:</h3></legend>
+					<div class="form-row">
+						<div class="col">
+							<textarea id="comments" name="comments" rows="4" cols="70" class="textbox"></textarea>
+						</div><!--closes textareadiv-->
+					</div>
   			</fieldset>
   			
 				<div id="formbuttons">
 					<!--submit button-->
-					<input id="submitbutton" type="submit" value="Submit"> 
-					<input id="clearbutton" type="reset">
+					<button id="submitbutton" type="submit" value="Submit" class="btn btn-primary">Submit</button>
+					<input id="clearbutton" type="reset" class="btn btn-primary">
 				</div>
 			</form><!--end of form-->
 		
 		<footer>
 			<!-- address, contact info-->
-			<div>
+			<div class="card">
 				<ul>
 					<li>
 						<p>Joe's Service &amp; Towing</p>
