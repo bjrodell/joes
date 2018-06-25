@@ -9,6 +9,7 @@
 	<!--BOOTSTRAP 4-->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/marcus.css">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Popper JS -->
@@ -16,13 +17,10 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 	
-	<!--site specific style sheet-->
-	<link href="../styles.css" rel="stylesheet" type="text/css">
-	
 	<script src="//use.edgefonts.net/josefin-sans;source-sans-pro.js"></script><!--global fonts-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--import jquery-->
-	<script src="../js/dropDown.js"></script><!--javascript toggle for nav links-->
-	<script src="../js/navScroll.js"></script><!--javascript toggle for nav when scrolling up or down-->
+	
+	<!--site specific stylesheet-->
+	<link rel="stylesheet" type="text/css" href="../styles.css">
 </head>
 
 <body>
@@ -61,70 +59,64 @@
 				</div><!-- closes collapse div-->
 			</nav><!--closes nav-->
 			
-			<div id="headerinfo" class="card">
-				<img src="../media/wrench.jpeg">
-				<div class="card-img-overlay">
-					<h2>Joe's Service &amp; Towing</h2>
+			<div style="background-image: url('../media/wrench.jpeg');background-size: 100% 100%;margin: 0;height: 100%" class="jumbotron jumbotron-fluid" >
+				<div style="height:400px"  class="container" >
+				<h1>Joe's Service &amp; Towing</h1>      
+				<p><h2></h2>
 					<h5>Mobile Automotive Repair &amp; Towing</h5>
 					<h6><a href="tel:5852453226">(585) 245-3226</a></h6>
 					<h6><a href="mailto:joesservice2018@gmail.com">joesservice2018@gmail.com</a></h6>
-				</div>
-				<div class="card-footer">
-					<h4>The mobile mechanic that comes to you!</h4>
-					<a class="btn btn-info" href="content/quote.html">Request A Quote</a>
+					<a href="content/quote.html" class="btn btn-info">Request A Quote</a></p>
 				</div>
 			</div>
 		</header><!--closes header-->
 		
-		<!--<h1></h1>
-		<div class="infotile darktile paragraph_center header_upperleft">
-			<img src="../media/homemechanic.jpg">
-			<h3>Driveway Repair</h3>
-			<p style="top:45%; background-color:rgba(140,109,115,0.9); padding:1%; border-radius:15px;" font-weight:bold;">Request repairs while you wait in the comfort of your own home!</p>
-			<a class="button_nobackground_white button_lowerright_small" href="../content/quote.html">Contact Me</a>
-		</div> -->
-		<div class="card">
-			<div class="card-header"><h4>Services</h4></div>
-			<div class="card-body"><img src="../media/homemechanic.jpg" style="width:100%">
-			<a style="top:-700px;position:relative;color:white; background-color:rgba(140,109,115,0.9); padding:1%; border-radius:15px;" font-weight:bold;">Request repairs while you wait in the comfort of your own home!</a></div>
-			<a class="button_nobackground_white button_lowerright_small" href="../content/quote.html">Contact Me</a></div> 
-			<div class="card-footer"><h3>Driveway Repair</h3><p>
-        </div>
-		<!--<div class="infotile lighttile paragraph_center header_uppercenter">
-			<img src="../media/roadsidebreakdown.jpg">
-			<h3>Emergency Roadside Repairs and Assistance</h3>
-			<p>In a jam? Stuck on the side of the road? Call Us Now!</p>
-			<a style="top:70%; left:50%;" class="button_nobackground_black button_lowerright_small" href="tel:5855555555">Call Us</a>
-		</div>  -->
-		<div class="card">
-			
-			<div class="card-body"><div class="infotile lighttile paragraph_center header_uppercenter">
-			<img src="../media/roadsidebreakdown.jpg">
-			<h3>Emergency Roadside Repairs and Assistance</h3>
-			<p style="top:320px">In a jam? Stuck on the side of the road? Call Us Now!</p>
-			<a style="top:70%; left:50%;" class="button_nobackground_black button_lowerright_small" href="tel:5855555555">Call Us</a>
-		</div>  </div> 
 		
-</div>
+		<div class="card">
+			<div class="card-header">
+				<h3 class="card-title">Driveway Repair</h3>
+			</div>
+			<div class="card-body">
+				<img src="../media/homemechanic.jpg" style="width:100%">
+				<a class="card-text text-center img-overlay" style="top: -675px; left: 60%; color:white">Request repairs while you wait in the comfort of your own home!</a>
+			</div>
+			<a href="../content/quote.html" class="btn btn-info">Contact Me</a>
+        </div>
+		
+		<div class="card">
+			<div class="card-header">
+				<h3 class="card-title">Emergency Assistance</h3>
+			</div>
+			<div class="card-body">
+				<img src="../media/roadsidebreakdown.jpg" style="width:100%">
+				<h3>Emergency Roadside Repairs and Assistance</h3>
+				<a class="card-text text-center img-overlay" style="top: -300px; left: 55%; color:white">In a jam? Stuck on the side of the road? Call Us Now!</a>
+			</div>  
+				<a href="tel:5855555555" class="btn btn-info">Call Us</a>
+		</div> 
+		
+	</div>
 		
 		<footer>
 			<!-- address, contact info-->
 			<div class="card">
-				<ul>
-					<li>
-						<p>Joe's Service &amp; Towing</p>
+				<ul class="list-group text-center">
+					<li class="list-group-item">
+						<h6>Contact:</h6>
 					</li>
-					<li>
+					<li class="list-group-item">
+						<a href="tel:5852453226" class="btn btn-outline-primary">Call Me</a>
+						<a href="mailto:joesservice2018@gmail.com" class="btn btn-outline-primary">Email Me</a>
+					</li>
+					<li class="list-group-item">
+						<br>	
+						<h3>Joe's Service &amp; Towing</h3>
+					</li>
+					<li class="list-group-item">
 						<p>Mobile Automotive Repair &amp; Towing</p>
 					</li>
-					<li>
+					<li class="list-group-item">
 						<p>Serving the Western New York and Finger Lakes Regions</p>
-					</li>
-					<li>
-						<a href="tel:5852453226">(585) 245-3226</a>
-					</li>
-					<li>
-						<a href="mailto:joesservice2018@gmail.com">joesservice2018@gmail.com</a>
 					</li>
 				</ul>
 			</div>
