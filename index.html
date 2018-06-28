@@ -9,9 +9,9 @@
 	<!--BOOTSTRAP 4-->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/marcus.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	
+	
 	<!-- Popper JS -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 	<!-- Latest compiled JavaScript -->
@@ -22,7 +22,8 @@
 
 	<!--site specific stylesheet-->
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	
+	<link rel="stylesheet" type="text/css" href="./css/marcus.css">
+	<link rel="stylesheet" type="text/css" href="./css/animate.css">
 </head>
 
 <body>
@@ -63,7 +64,7 @@
 		
 			<div style="background-image: url('media/wrench.jpeg');background-size: 100% 100%;margin: 0;height: 100%" class="jumbotron jumbotron-fluid" >
 				<div style="height:400px"  class="container" >
-				<h1>Joe's Service &amp; Towing</h1>      
+				<h1 class="animated jello">Joe's Service &amp; Towing</h1>      
 				<p>
 					<h2></h2>
 					<h5>Mobile Automotive Repair &amp; Towing</h5>
@@ -79,10 +80,10 @@
 			<div class="card-header">
 				<h3 class="card-title">Our Mission</h3>
 			</div>
-			<div class="card-body">
+			<div class="card-body  scroll-animations">
 				<img src="media/undercar.jpg" class="card-img-top">
 				<div class="card-img-overlay" style=" padding-right: 20%">
-				<a class="card-text text-center img-overlay text-white" style="top: 20%;left: 30px; display: inline-block">Our mission is to provide low cost, quality car repair while you sit in the comfort of your own home.</a>
+				<a class="animated card-text text-center img-overlay text-white" style="top: 20%;left: 30px; display: inline-block">Our mission is to provide low cost, quality car repair while you sit in the comfort of your own home.</a>
 				</div>
 				<br><br><a href="content/quote.html" class="btn btn-info">Request A Quote</a>
 		</div>
@@ -91,10 +92,10 @@
 			<div class="card-header">
 				<h3 class="card-title">Services</h3>
 			</div>
-			<div class="card-body text-right">
+			<div class="card-body text-right scroll-animations">
 				<img src="media/brokendown.jpg" class="card-img-top">
 				<div class="card-img-overlay" style=" padding-left:20% ">
-				<a class="card-text text-center img-overlay text-white " style="top: 50%; right: 40px; display: inline-block">Please check out our array of services.</a>
+				<a class="animated card-text text-center img-overlay text-white " style="top: 50%; right: 40px; display: inline-block">Please check out our array of services.</a>
 				
 			</div><br><br><a href="content/services.html" class="btn btn-info">View Our Services</a></div>
 		</div>
@@ -125,6 +126,11 @@
 		</footer>
 		
 	</div><!--closes pagewrap-->
+		
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script src='./js/main.js'></script> 
 		
 		
 </body>
