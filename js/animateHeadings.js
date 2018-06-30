@@ -11,10 +11,12 @@ $(document).ready(function() {
   }
   // If element is scrolled into view, fade it in
   $(window).scroll(function() {
-    $('.scroll-animations .animated').each(function() {
-      if (isScrolledIntoView(this) === true) {
-        $(this).addClass('bounceInLeft');
-      }
-    });
+	$('.page-content .card').each(function() {
+	   if (isScrolledIntoView(this) === true) {
+        $(this).addClass('fadeInUp');
+		$(this).find('.card-body').removeClass('d-none');
+		$(this).find('.card-title').addClass('bounceInLeft');
+		}
+	});
   });
 });
