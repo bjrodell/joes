@@ -16,3 +16,21 @@ footer p {
 	font-size:0.8em;
 	margin-bottom:0;
 }
+
+/*styles for nav*/
+
+
+/*styles for image overlay*/
+ .img-overlay {
+            position: relative;
+			color: blue;
+			background-color:  rgba(0, 0, 0, 0.5);
+			border-style: solid;
+            border-color: gray;
+			border-width: 1px;
+			padding: 10px;
+			border-radius: 15px;
+        }
+.img-overlay a {
+	position:relative;
+}
