@@ -1,5 +1,38 @@
 <!doctype html>
 <html>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    box-shadow: 3px 3px 3px  #aaa;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+	top: 50%;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    box-shadow: 3px 3px 3px  #aaa;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+.form-label{
+	position: relative;
+	text-align: right;
+	
+	
+}
+
+</style>
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -77,51 +110,58 @@
 					</p>
 				</div>
 			</div>
-		</header><!--closes header-->
+		</header><!--closes header--><center>
+		<div class="form-container" align="left">
 		<form action="send_form_email.php" method="POST" target = "_blank" >
   			<!--text inputs-->
   			<fieldset>
     			<legend class="legendheader"><h3>Contact Information</h3></legend>
-					<div class="form-row">
-							<label for="nameinput" class="col-3">Name:</label>
-							<input id="nameinput" class="col-6" type="text" name="clientname" maxlength="70" required>
+					<div class="">
+							<label for="nameinput" class="col-2 form-label" style="vertical-align: middle">Name:</label>
+							<input id="nameinput" class="col-8" type="text" name="clientname" maxlength="70" required>
 					</div>
-					<div class="form-row">
-							<label for="addressinput" class="col-3">Address:</label>
-							<input id="addressinput" class="col-6" type="text" name="clientaddress"maxlength="70" required>
+					<div class="">
+							<label for="addressinput" class="col-2 form-label">Address:</label>
+							<input id="addressinput" class="col-8" type="text" name="clientaddress"maxlength="70" required>
 					</div>
-					<div class="form-row">
-							<label for="emailinput" class="col-3">Email:</label>
-							<input id="emailinput" class="col-6" type="email" name="email" maxlength="60" required>
+					<div class="">
+							<label for="addressinput" class="col-2 form-label"></label>
+							<input id="addressinput" class="col-4" type="text" name="clientaddress"maxlength="70" required>
+							<input id="addressinput" class="col-1" type="text" name="clientaddress"maxlength="2" required>
+							<input id="addressinput" class="col-2" type="text" name="clientaddress"maxlength="10" required>
 					</div>
-					<div class="form-row">
-							<label for="phoneinput" class="col-3">Phone:</label>
-							<input id="phoneinput" class="col-6" type="text" name="phone" maxlength="12" required>
+					<div class="">
+							<label for="emailinput" class="col-2 form-label ">Email:</label>
+							<input id="emailinput" class="col-8" type="email" name="email" maxlength="60" required>
+					</div>
+					<div class="">
+							<label for="phoneinput" class="col-2 form-label">Phone:</label>
+							<input id="phoneinput" class="col-8" type="text" name="phone" maxlength="12" required>
 					</div>
   			</fieldset>
-  			
-  			<fieldset>
-  				<legend><h3>What type of services are you looking for?</h3></legend>
+  			<br />
+  			<fieldset align="center">
+  				<legend><h3 align="left">What type of services are you looking for?</h3></legend>
 					    <div class="form-row">
 							<input type="hidden" name="drivewayrepair" value="No">
-							<label class="col-5" id="drivewayrepairlabel">Driveway Repair</label>
-							<div class="col-6">
+							<label class="col-3 form-label" id="drivewayrepairlabel">Driveway Repair</label>
+							<div class="col-1">
 								<input class="form-check-input" id="drivewayrepairinput" type="checkbox" name="drivewayrepair" value="Yes">
 							</div>
 						</div>
 						
 						<div class="form-row">
 							<input type="hidden" name="emergencyroadside" value="No">
-							<label class="col-5" id="emergencyroadsidelabel">Emergency Roadside</label>
-							<div class="col-6">
+							<label class="col-3 form-label" id="emergencyroadsidelabel">Emergency Roadside</label>
+							<div class="col-1">
 								<input class="form-check-input" id="emergencyinput" type="checkbox" name="emergencyroadside" value="Yes">
 							</div>
 						</div>
   						
 						<div class="form-row">
 							<input type="hidden" name="other" value="No">
-							<label class="col-5" id="otherlabel">Other</label>
-							<div class="col-6">
+							<label class="col-3 form-label" id="otherlabel">Other</label>
+							<div class="col-1">
 								<input class="form-check-input" id="otherinput" type="checkbox" name="other" value="Yes">
 							</div>
 						</div>
@@ -142,7 +182,7 @@
 					<input id="clearbutton" type="reset" class="btn btn-primary">
 				</div>
 			</form><!--end of form-->
-		
+		</div><!--end of form container--> </center>
 		<footer>
 			<!-- address, contact info-->
 			<div class="card">
