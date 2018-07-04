@@ -17,11 +17,27 @@ footer p {
 	margin-bottom:0;
 }
 
+/*styles for cards on site*/
+
+.card{
+	border:none;
+}
+
+.card-header {
+	border:none;
+	background-color:#ffffff;
+}
+
+.card-body img {
+	border-radius:10px;
+}
+
 /*styles for nav*/
 
 
 /*styles for image overlay*/
- .img-overlay {
+
+.img-overlay {
             position: relative;
 			color: blue;
 			background-color:  rgba(0, 0, 0, 0.5);
@@ -30,7 +46,8 @@ footer p {
 			border-width: 1px;
 			padding: 10px;
 			border-radius: 15px;
-        }
+}
+
 .img-overlay a {
 	position:relative;
 }
@@ -38,7 +55,6 @@ footer p {
 
 .form-container {
 		text-shadow: 0px 1px 5px #000;
-			
 		position: relative;
 		display: inline-block;
 		width: 60%;
@@ -48,8 +64,26 @@ footer p {
 		border-radius: 15px;
 		background: #d8e7ff;
 		color: white;
-			 
 		margin: 5%;
 		float: none;
 		box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
-		}
+}
+
+
+/*animation delays*/
+
+.delay-1 {
+	animation-delay:.25s;
+}
+
+.delay-2 {
+	animation-delay:.5s;
+}
+
+.delay-3 {
+	animation-delay:.75s;
+}
+
+.delay-4 {
+	animation-delay:1s;
+}
