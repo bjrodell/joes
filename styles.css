@@ -69,6 +69,37 @@ footer p {
 		box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
 }
 
+/*quote page styles*/
+
+input[type=text], select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    box-shadow: 3px 3px 3px  #aaa;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+	top: 50%;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    box-shadow: 3px 3px 3px  #aaa;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+.form-label{
+	position: relative;
+	text-align: right;
+}
+
 
 /*animation delays*/
 
