@@ -17,11 +17,27 @@ footer p {
 	margin-bottom:0;
 }
 
+/*styles for cards on site*/
+
+.card{
+	border:none;
+}
+
+.card-header {
+	border:none;
+	background-color:#ffffff;
+}
+
+.card-body img {
+	border-radius:10px;
+}
+
 /*styles for nav*/
 
 
 /*styles for image overlay*/
- .img-overlay {
+
+.img-overlay {
             position: relative;
 			color: blue;
 			background-color:  rgba(0, 0, 0, 0.5);
@@ -30,7 +46,75 @@ footer p {
 			border-width: 1px;
 			padding: 10px;
 			border-radius: 15px;
-        }
+}
+
 .img-overlay a {
 	position:relative;
+}
+
+
+.form-container {
+		text-shadow: 0px 1px 5px #000;
+		position: relative;
+		display: inline-block;
+		width: 60%;
+		height: 1;
+		padding: 10px;
+		align-content: center;
+		border-radius: 15px;
+		background: #d8e7ff;
+		color: white;
+		margin: 5%;
+		float: none;
+		box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
+}
+
+/*quote page styles*/
+
+input[type=text], select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    box-shadow: 3px 3px 3px  #aaa;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+	top: 50%;
+}
+
+input[type=email], select {
+    width: 100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    box-shadow: 3px 3px 3px  #aaa;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+
+.form-label{
+	position: relative;
+	text-align: right;
+}
+
+
+/*animation delays*/
+
+.delay-1 {
+	animation-delay:.25s;
+}
+
+.delay-2 {
+	animation-delay:.5s;
+}
+
+.delay-3 {
+	animation-delay:.75s;
+}
+
+.delay-4 {
+	animation-delay:1s;
 }
