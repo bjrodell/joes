@@ -1,6 +1,23 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*styles for headers on all pages*/
+.jumbotron img {
+	max-width:90%;
+	margin-left:5%;
+}
+
+.jumbotron {
+	background-color:#ffffff;
+}
+
+.jumbotron .container {
+	height:400px;  
+}
+
+
+/* styles for footers on all pages*/
+
 footer .list-group-item {
 	border:none;
 	margin:0;
