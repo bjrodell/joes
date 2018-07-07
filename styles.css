@@ -105,3 +105,15 @@ input[type=text], input[type=email], select {
 .delay-4 {
 	animation-delay:1s;
 }
+
+/*********** mobile specific stylesheet ********/
+
+@media screen and (max-width: 992px) {
+	
+	.form-check-input{
+		margin-left:5%;
+	}
+
+	
+}
+
