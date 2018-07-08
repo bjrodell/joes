@@ -95,6 +95,8 @@ form {
 	box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
 	border-radius: 15px;
 	padding:5%;
+	display: inline-block;
+	z-index: 2100;
 }
 
 input[type=text], input[type=email], select {
@@ -134,4 +136,14 @@ input[type=text], input[type=email], select {
 
 	
 }
+
+/***** desktop specific stylesheet ***********/
+@media screen and (min-width: 800px) {
+	.jumbotron-fluid img
+	{
+		content: url("media/logo/headerlogo-large.png");
+	}
+}
+
+
 
