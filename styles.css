@@ -15,6 +15,9 @@
 	height:400px;  
 }
 
+/*nav bar style*/
+
+
 
 /* styles for footers on all pages*/
 
@@ -51,6 +54,21 @@ footer p {
 
 /*styles for nav*/
 
+.navbar-nav {
+	text-align: center !important;
+}
+
+.active{
+	line-height: 35px;
+	background-color: rgb(200,200,255) !important;
+	border-color: rgb(150,150,255) !important;
+	vertical-align: middle;
+	margin: none;
+	border-radius: 5px !important;
+	border-width: 0px !important;
+	height: 40px;
+	border-style: solid !important;
+}
 
 /*styles for image overlay*/
 
