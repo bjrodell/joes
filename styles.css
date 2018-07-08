@@ -1,6 +1,26 @@
 @charset "utf-8";
 /* CSS Document */
 
+/*styles for headers on all pages*/
+.jumbotron img {
+	max-width:90%;
+	margin-left:5%;
+}
+
+.jumbotron {
+	background-color:#ffffff;
+}
+
+.jumbotron .container {
+	height:400px;  
+}
+
+/*nav bar style*/
+
+
+
+/* styles for footers on all pages*/
+
 footer .list-group-item {
 	border:none;
 	margin:0;
@@ -34,6 +54,21 @@ footer p {
 
 /*styles for nav*/
 
+.navbar-nav {
+	text-align: center !important;
+}
+
+.active{
+	line-height: 35px;
+	background-color: rgb(200,200,255) !important;
+	border-color: rgb(150,150,255) !important;
+	vertical-align: middle;
+	margin: none;
+	border-radius: 5px !important;
+	border-width: 0px !important;
+	height: 40px;
+	border-style: solid !important;
+}
 
 /*styles for image overlay*/
 
@@ -52,54 +87,26 @@ footer p {
 	position:relative;
 }
 
-
-.form-container {
-		text-shadow: 0px 1px 5px #000;
-		position: relative;
-		display: inline-block;
-		width: 60%;
-		height: 1;
-		padding: 10px;
-		align-content: center;
-		border-radius: 15px;
-		background: #d8e7ff;
-		color: white;
-		margin: 5%;
-		float: none;
-		box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
-}
-
 /*quote page styles*/
 
-input[type=text], select {
-    width: 100%;
+form {
+	text-shadow: 0px 1px 1px #000;
+	background: #d8e7ff;
+	box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+	padding:5%;
+	display: inline-block;
+	z-index: 2100;
+}
+
+input[type=text], input[type=email], select {
+    margin:2%;
+	margin-top:8%;
     padding: 8px 10px;
-    margin: 8px 0;
     display: inline-block;
     box-shadow: 3px 3px 3px  #aaa;
-    border: 1px solid #ccc;
     border-radius: 10px;
-    box-sizing: border-box;
-	top: 50%;
 }
-
-input[type=email], select {
-    width: 100%;
-    padding: 8px 10px;
-    margin: 8px 0;
-    display: inline-block;
-    box-shadow: 3px 3px 3px  #aaa;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-
-.form-label{
-	position: relative;
-	text-align: right;
-}
-
 
 /*animation delays*/
 
@@ -118,3 +125,25 @@ input[type=email], select {
 .delay-4 {
 	animation-delay:1s;
 }
+
+/*********** mobile specific stylesheet ********/
+
+@media screen and (max-width: 992px) {
+	
+	.form-check-input{
+		margin-left:5%;
+	}
+
+	
+}
+
+/***** desktop specific stylesheet ***********/
+@media screen and (min-width: 800px) {
+	.jumbotron-fluid img
+	{
+		content: url("media/logo/headerlogo-large.png");
+	}
+}
+
+
+

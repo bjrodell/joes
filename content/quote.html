@@ -9,7 +9,6 @@
 	<!--BOOTSTRAP 4-->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/marcus.css">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Popper JS -->
@@ -33,115 +32,117 @@
 	
 		<header>	
 			<!-- navigation-->
-			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light">
-				
+			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light" style="padding: 0px">
+			
+				<a class="navbar-brand" href="#">&nbsp&nbsp&nbsp&nbsp</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="collapse navbar-collapse " id="navbarSupportedContent" >
 				
-				<ul class="navbar-nav mr-auto">
-					<li class="nav-item col-md-2">
+				<ul class="navbar-nav ">
+					<li class="nav-item col-md-2 " style="line-height:35px">
 						<a href='../index.html'>Home</a>
 					</li>
-					<li class="nav-item col-md-2">
-						<a href='pricing.html'>Pricing</a>
+					<li class="nav-item col-md-3 active" >
+						<a href='quote.html' style="line-height:35px">Request A Quote</a>
 					</li>
-					<li class="nav-item col-md-2">
+					<li class="nav-item col-md-2 "style="line-height:35px">
 						<a href='services.html'>Services</a>
 					</li>
-					<li class="nav-item col-md-3">
-						<a href='howitworks.html'>How it works</a>
+					<li class="nav-item col-md-3" style="line-height:35px">
+						<a href='howitworks.html'>How it Works</a>
 					</li>
-					<li class="nav-item col-md-5">
+					<li class="nav-item col-md-2" style="line-height:35px">
+						<a href='pricing.html'>Pricing</a>
+					</li>
+					<li class="nav-item col-md-4" style="line-height:35px">
 						<a href="tel:5852453226">Call Today! (585) 245-3226</a>
 					</li>
 				</ul>
 				</div><!-- closes collapse div-->
 			</nav><!--closes nav-->
 			
-			<div style="background-image: url('../media/wrench.jpeg');background-size: 100% 100%;margin: 0;height: 100%" class="jumbotron jumbotron-fluid" >
-				<div style="height:400px"  class="container" >
-				<h1>Joe's Service &amp; Towing</h1>      
-				<p><h2></h2>
+			<div class="jumbotron jumbotron-fluid">
+				<div class="container" >
+					<h1>Joe's Service &amp; Towing</h1> 
 					<h5>Mobile Automotive Repair &amp; Towing</h5>
 					<h6><a href="tel:5852453226">(585) 245-3226</a></h6>
 					<h6><a href="mailto:joesservice2018@gmail.com">joesservice2018@gmail.com</a></h6>
-					<a href="content/quote.html" class="btn btn-info">Request A Quote</a></p>
-					<p style="font-size: 1.5em;"> <!-- make css classes-->
+					<a href="quote.html" class="btn btn-info">Request A Quote</a>
+					<h2> <!-- make css classes-->
 						<a href="#" class="fa fa-facebook" style="text-decoration : none" ></a>
 						<a href="#" class="fa fa-twitter" style="text-decoration : none"></a>
 						<a href="#" class="fa fa-instagram" style="text-decoration : none"></a>
 						<a href="#" class="fa fa-pinterest" style="text-decoration : none"></a>
-					</p>
+					</h2>
+					<img src="../media/logo/headerlogo.png">
 				</div>
 			</div>
-		</header><!--closes header--><center>
-		<div class="form-container" align="left">
-		<form action="send_form_email.php" method="POST" target = "_blank" >
-  			<!--text inputs-->
-  			<fieldset>
-    			<legend class="legendheader"><h3>Contact Information</h3></legend>
-					<div class="">
-							<label for="nameinput" class="col-2 form-label" style="vertical-align: middle">Name:</label>
-							<input id="nameinput" class="col-8" type="text" name="clientname" maxlength="70" required>
-					</div>
-					<div class="">
-							<label for="addressinput" class="col-2 form-label">Address:</label>
-							<input id="addressinput" class="col-8" type="text" name="clientaddress"maxlength="70" required>
-					</div>
-					<div class="">
+		</header><!--closes header-->
+		
+		<div class="form-container" align="center">
+			<form action="send_form_email.php" method="POST" target = "_blank" >
+			<!--text inputs-->
+				<div class="form-group">
+					<legend class="legendheader"><h3>Contact Information</h3></legend>
+						<div class="">
+							<label for="nameinput" class="col-3 form-label" style="vertical-align: middle">Name:</label>
+							<input id="nameinput" class="col-7 form-control" type="text" name="clientname" maxlength="70" required>
+						</div>
+						<div class="">
+							<label for="addressinput" class="col-3 form-label">Address:</label>
+							<input id="addressinput" class="col-7 form-control" type="text" name="clientaddress"maxlength="70" required>
+						</div>
+						<div class="">
 							<label for="addressinput" class="col-2 form-label"></label>
-							<input id="addressinput" class="col-4" type="text" name="clientaddress"maxlength="70" required>
-							<input id="addressinput" class="col-1" type="text" name="clientaddress"maxlength="2" required>
-							<input id="addressinput" class="col-2" type="text" name="clientaddress"maxlength="10" required>
-					</div>
-					<div class="">
+							<input id="addressinput" class="col-4 form-control" style="margin:.3%;" type="text" name="clientaddress"maxlength="70" required>
+							<input id="addressinput" class="col-2 form-control" style="margin:.3%;" type="text" name="clientaddress"maxlength="2" required>
+							<input id="addressinput" class="col-2 form-control" style="margin:.3%;" type="text" name="clientaddress"maxlength="10" required>
+						</div>
+						<div class="">
 							<label for="emailinput" class="col-2 form-label ">Email:</label>
-							<input id="emailinput" class="col-8" type="email" name="email" maxlength="60" required>
-					</div>
-					<div class="">
+							<input id="emailinput" class="col-8 form-control" type="email" name="email" maxlength="60" required>
+						</div>
+						<div class="">
 							<label for="phoneinput" class="col-2 form-label">Phone:</label>
-							<input id="phoneinput" class="col-8" type="text" name="phone" maxlength="12" required>
-					</div>
-  			</fieldset>
-  			<br />
-  			<fieldset align="center">
-  				<legend><h3 align="left">What type of services are you looking for?</h3></legend>
+							<input id="phoneinput" class="col-8 form-control" type="text" name="phone" maxlength="12" required>
+						</div>
+				</div><!--closes form-group-->
+				
+				<div class="form-group">
+					<legend><h3 align="left">What type of services are you looking for?</h3></legend>
 					    <div class="form-row">
 							<input type="hidden" name="drivewayrepair" value="No">
-							<label class="col-3 form-label" id="drivewayrepairlabel">Driveway Repair</label>
-							<div class="col-1">
-								<input class="form-check-input" id="drivewayrepairinput" type="checkbox" name="drivewayrepair" value="Yes">
-							</div>
+							<div class="col-2"></div>
+							<input class="form-check-input col-3" id="drivewayrepairinput" type="checkbox" name="drivewayrepair" value="Yes">
+							<label class="col-3 form-check-label" id="drivewayrepairlabel">Driveway Repair</label>
 						</div>
 						
 						<div class="form-row">
 							<input type="hidden" name="emergencyroadside" value="No">
-							<label class="col-3 form-label" id="emergencyroadsidelabel">Emergency Roadside</label>
-							<div class="col-1">
-								<input class="form-check-input" id="emergencyinput" type="checkbox" name="emergencyroadside" value="Yes">
-							</div>
+							<div class="col-2"></div>
+							<input class="form-check-input col-3" id="emergencyinput" type="checkbox" name="emergencyroadside" value="Yes">
+							<label class="col-3 form-check-label" id="emergencyroadsidelabel">Emergency Roadside</label>
 						</div>
   						
 						<div class="form-row">
+							<div class="col-2"></div>
 							<input type="hidden" name="other" value="No">
-							<label class="col-3 form-label" id="otherlabel">Other</label>
-							<div class="col-1">
-								<input class="form-check-input" id="otherinput" type="checkbox" name="other" value="Yes">
-							</div>
+							<input class="form-check-input col-3" id="otherinput" type="checkbox" name="other" value="Yes">
+							<label class="col-3 form-check-label" id="otherlabel">Other</label>
 						</div>
-  			</fieldset>
+				</div><!--closes form-group-->
   			
-  			<fieldset id="comments">
-  				<legend><h3>If other, please describe:</h3></legend>
-					<div class="form-row">
-						<div class="col">
-							<textarea id="comments" name="comments" rows="4" cols="70" class="textbox"></textarea>
-						</div><!--closes textareadiv-->
-					</div>
-  			</fieldset>
+				<div class="form-group">
+					<legend><h3>If other, please describe:</h3></legend>
+						<div class="form-row">
+							<div class="col">
+								<textarea id="comments" class="form-control" name="comments" rows="4" cols="70" class="textbox"></textarea>
+							</div><!--closes textareadiv-->
+						</div>
+				</div><!--closes form-group-->
   			
 				<div id="formbuttons">
 					<!--submit button-->
@@ -149,7 +150,7 @@
 					<input id="clearbutton" type="reset" class="btn btn-primary">
 				</div>
 			</form><!--end of form-->
-		</div><!--end of form container--> </center>
+		</div><!--end of form container--> 
 		<footer>
 			<!-- address, contact info-->
 			<div class="card">

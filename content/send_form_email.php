@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Untitled Document</title>
+<title>Client Request</title>
 </head>
 
 <body>
@@ -61,7 +61,7 @@ $email_message = "
 				 "<div><h4>Other Reason: </h4>". "<div class='data'>". $other_reason. "</div></div>".
 				 
 	
-				 "<div><h4>Commercial: </h4>". "<div class='data'>". $additional_comments. "</div></div>".
+				 "<div><h4>Comments: </h4>". "<div class='data'>". $additional_comments. "</div></div>".
 				 "</body>
 				  </html>";
 
