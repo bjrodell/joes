@@ -41,6 +41,7 @@ footer p {
 
 .card{
 	border:none;
+	margin-bottom:5%;
 }
 
 .card-header, .card-footer {
