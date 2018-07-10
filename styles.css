@@ -1,6 +1,26 @@
 @charset "utf-8";
 /* CSS Document */
 
+
+/*** color pallette  **********************
+
+#d70504 - bright red
+#8c6d73 - light purple
+#6b869b - blue
+#dddbdc - grey - light
+#080401 - black
+*/
+
+/*base styles for a tags*/
+a {
+	text-decoration:none;
+	color:#6b869b;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
 /*styles for headers on all pages*/
 .jumbotron img {
 	max-width:90%;
@@ -15,7 +35,6 @@
 	height:400px;  
 }
 
-/*nav bar style*/
 
 
 
