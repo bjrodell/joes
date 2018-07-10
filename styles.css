@@ -100,8 +100,9 @@ form {
 	z-index: 2100;
 }
 
+
 input[type=text], input[type=email], select {
-    margin:2%;
+    margin:1%;
 	margin-top:8%;
     padding: 8px 10px;
     display: inline-block;
@@ -150,10 +151,11 @@ input[type=text], input[type=email], select {
 	{
 		content: url("media/logo/headerlogo-large.png");
 	}
+	
 }
 
 @media screen  and (max-width: 979px) /* Tablet */ {
-  
+
 }
 
 @media screen and (max-width: 500px) /* Mobile */ {
