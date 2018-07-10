@@ -43,7 +43,7 @@ footer p {
 	border:none;
 }
 
-.card-header {
+.card-header, .card-footer {
 	border:none;
 	background-color:#ffffff;
 }
@@ -126,24 +126,37 @@ input[type=text], input[type=email], select {
 	animation-delay:1s;
 }
 
-/*********** mobile specific stylesheet ********/
-
-@media screen and (max-width: 992px) {
-	
-	.form-check-input{
-		margin-left:5%;
-	}
-
-	
+.delay-5 {
+	animation-delay:1.25s;
 }
 
-/***** desktop specific stylesheet ***********/
-@media screen and (min-width: 800px) {
-	.jumbotron-fluid img
+.delay-6 {
+	animation-delay:1.5s;
+}
+
+.delay-7 {
+	animation-delay:1.75s;
+}
+
+.delay-8 {
+	animation-delay:2s;
+}
+
+/*********** mobile specific stylesheet ********/
+
+@media screen and (min-width: 980px) /* Desktop */ {
+  .jumbotron-fluid img
 	{
 		content: url("media/logo/headerlogo-large.png");
 	}
 }
 
+@media screen  and (max-width: 979px) /* Tablet */ {
+  
+}
 
-
+@media screen and (max-width: 500px) /* Mobile */ {
+  .form-check-input{
+		margin-left:5%;
+	}
+}
