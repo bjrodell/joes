@@ -153,6 +153,14 @@ form {
 }
 
 
+.form-control:focus{
+		border-color: #ffffff;  box-shadow: none; -webkit-box-shadow: none !important;
+} 
+		
+.has-error .form-control:focus{
+		box-shadow: none; -webkit-box-shadow: none !important;
+}
+
 input[type=text], input[type=email], select {
     margin:1%;
 	margin-top:8%;
