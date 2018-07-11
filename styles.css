@@ -5,20 +5,45 @@
 /*** color pallette  **********************
 
 #d70504 - bright red
-#8c6d73 - light purple
-#6b869b - blue
+#8c6d73 (140,109,115) - light purple
+#4b86cb - blue
 #dddbdc - grey - light
 #080401 - black
 */
+h1, h2, h3, h4 {
+	color:#080401;
+}
+
+h5, h6 {
+	color:#d70504;
+}
 
 /*base styles for a tags*/
 a {
 	text-decoration:none;
-	color:#6b869b;
+	color:#4b86cb;
+	font-weight:500;
 }
 
 a:hover {
 	text-decoration:none;
+	color:#4b86fb;
+}
+
+/*button styles*/
+
+.btn-info {
+	background-color:#4b86cb;
+	border-color:#4b86cb;
+}
+
+.btn-info:hover {
+	border-color:#4b86cb;
+	background-color:#4b86fb;
+}
+
+.btn-outline-primary {
+	border-color:#4b86cb;
 }
 
 /*styles for headers on all pages*/
@@ -74,14 +99,22 @@ footer p {
 
 /*styles for nav*/
 
+nav {
+}
+
 .navbar-nav {
 	text-align: center !important;
+	background-color:#ffffff;
+}
+
+.collapse, nav {
+	background-color:#ffffff;
 }
 
 .active{
 	line-height: 35px;
-	background-color: rgb(200,200,255) !important;
-	border-color: rgb(150,150,255) !important;
+	background-color: #dddbdc !important;
+	border-color: #dddbdc !important;
 	vertical-align: middle;
 	margin: none;
 	border-radius: 5px !important;
@@ -95,7 +128,7 @@ footer p {
 .img-overlay {
             position: relative;
 			color: blue;
-			background-color:  rgba(0, 0, 0, 0.5);
+			background-color:  rgba(0,0,0, 0.5);
 			border-style: solid;
             border-color: gray;
 			border-width: 1px;
