@@ -102,6 +102,10 @@ footer p {
 nav {
 }
 
+#nav{
+	background-color:#ffffff !important; /* needs to be same color as navbar-nav BG color*/
+}
+
 .navbar-nav {
 	text-align: center !important;
 	background-color:#ffffff;
@@ -112,7 +116,7 @@ nav {
 }
 
 .active{
-	line-height: 35px;
+	line-height: 35px !important;
 	background-color: #dddbdc !important;
 	border-color: #dddbdc !important;
 	vertical-align: middle;
@@ -155,6 +159,7 @@ form {
 
 .form-control:focus{
 		border-color: #ffffff;  box-shadow: none; -webkit-box-shadow: none !important;
+		border-width: 1px;
 } 
 		
 .has-error .form-control:focus{
