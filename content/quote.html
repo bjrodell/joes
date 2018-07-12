@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Request a Quote</title>
@@ -24,7 +25,10 @@
 	<!--site specific stylesheet-->
 	<link rel="stylesheet" type="text/css" href="../styles.css">
 	<link rel="stylesheet" type="text/css" href="../css/animate.css">
-</head>
+<style>
+
+</style>
+	</head>
 
 <body>
     
@@ -87,27 +91,30 @@
 			<!--text inputs-->
 				<div class="form-group">
 					<legend class="legendheader"><h3>Contact Information</h3></legend>
-						<div class="">
-							<label for="nameinput" class="col-3 form-label" style="vertical-align: middle">Name:</label>
+						<div class="form-row">
+							<label for="nameinput" class="col-3 form-label" >Name:</label>
 							<input id="nameinput" class="col-7 form-control" type="text" name="clientname" maxlength="70" required>
 						</div>
-						<div class="">
+						<div class="form-row">
 							<label for="addressinput" class="col-3 form-label">Address:</label>
-							<input id="addressinput" class="col-7 form-control" type="text" name="clientaddress"maxlength="70" required>
+							<input id="addressinput" class="col-6 form-control" type="text" name="clientaddress" maxlength="70" required>
 						</div>
-						<div class="">
-							<label for="addressinput" class="col-2 form-label"></label>
-							<input id="addressinput" class="col-4 form-control" style="margin:.3%;" type="text" name="clientaddress"maxlength="70" required>
-							<input id="addressinput" class="col-2 form-control" style="margin:.3%;" type="text" name="clientaddress"maxlength="2" required>
-							<input id="addressinput" class="col-2 form-control" style="margin:.3%;" type="text" name="clientaddress"maxlength="10" required>
+						<div class="form-row">
+							<label for="cityinput" class="col-3 form-label">City:</label>
+							<input id="cityinput" class="col-6 form-control" type="text" name="clientcity"maxlength="70" required>
 						</div>
-						<div class="">
-							<label for="emailinput" class="col-2 form-label ">Email:</label>
+						<div class="form-row">
+							<label for="stateinput" class="col-3 form-label">State,Zip:</label>
+							<input id="stateinput" class="col-2 form-control"  type="text" name="clientstate"maxlength="2" required>
+							<input id="zipinput" class="col-3 form-control"  type="text" name="clientzip"maxlength="10" required>
+						</div>
+						<div class="form-row">
+							<label for="emailinput" class="col-3 form-label ">Email:</label>
 							<input id="emailinput" class="col-8 form-control" type="email" name="email" maxlength="60" required>
 						</div>
-						<div class="">
-							<label for="phoneinput" class="col-2 form-label">Phone:</label>
-							<input id="phoneinput" class="col-8 form-control" type="text" name="phone" maxlength="12" required>
+						<div class="form-row">
+							<label for="phoneinput" class="col-3 form-label">Phone:</label>
+							<input id="phoneinput" class="col-5 form-control" type="text" name="phone" maxlength="12" required>
 						</div>
 				</div><!--closes form-group-->
 				
@@ -117,6 +124,7 @@
 							<input type="hidden" name="drivewayrepair" value="No">
 							<div class="col-2"></div>
 							<input class="form-check-input col-3" id="drivewayrepairinput" type="checkbox" name="drivewayrepair" value="Yes">
+							<div class="col-1"></div>
 							<label class="col-3 form-check-label" id="drivewayrepairlabel">Driveway Repair</label>
 						</div>
 						
@@ -124,6 +132,7 @@
 							<input type="hidden" name="emergencyroadside" value="No">
 							<div class="col-2"></div>
 							<input class="form-check-input col-3" id="emergencyinput" type="checkbox" name="emergencyroadside" value="Yes">
+							<div class="col-1"></div>
 							<label class="col-3 form-check-label" id="emergencyroadsidelabel">Emergency Roadside</label>
 						</div>
   						
@@ -131,6 +140,7 @@
 							<div class="col-2"></div>
 							<input type="hidden" name="other" value="No">
 							<input class="form-check-input col-3" id="otherinput" type="checkbox" name="other" value="Yes">
+							<div class="col-1"></div>
 							<label class="col-3 form-check-label" id="otherlabel">Other</label>
 						</div>
 				</div><!--closes form-group-->

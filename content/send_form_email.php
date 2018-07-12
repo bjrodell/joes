@@ -10,7 +10,7 @@
 
 <?php
 
-$email_to = "bjrodell@gmail.com";
+$email_to = "bjrodell@gmail.com, maneely84@gmail.com";
 $email_subject = "Customer Information Request";
  
 // Escape user inputs for security - references the name attribute on the contact page in the POST 

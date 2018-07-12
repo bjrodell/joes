@@ -16,6 +16,7 @@ $(document).ready(function() {
         $(this).addClass('fadeInUp');
 		$(this).find('.card-body').removeClass('d-none');
 		$(this).find('.card-title').addClass('bounceInLeft');
+		$(this).find('li').addClass('bounceInLeft');
 		}
 	});
   });
