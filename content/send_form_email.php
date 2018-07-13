@@ -17,6 +17,10 @@ $email_subject = "Customer Information Request";
 
 $customer_name = $_POST['clientname'];
 $customer_address = $_POST['clientaddress'];
+$customer_city = $_POST['clientcity'];
+$customer_state = $_POST['clientstate'];
+$customer_zip = $_POST['clientzip'];
+
 $customer_email = $_POST['email'];
 $customer_phone = $_POST['phone'];
 	
@@ -52,7 +56,7 @@ $email_message = "
 				 </head>
 				 <body>".
 				 "<div><h4>Name: </h4>". "<div class='data'>". $customer_name. "</div></div>".
-				 "<div><h4>Address: </h4>". "<div class='data'>". $customer_address. "</div></div>".
+				 "<div><h4>Address: </h4>". "<div class='data'>". $customer_address." ". $customer_city.", ". $customer_state." " .$customer_zip. "</div></div>".
 				 "<div><h4>Email: </h4>". "<div class='data'>". $customer_email. "</div></div>".
 				 "<div><h4>Phone: </h4>". "<div class='data'>". $customer_phone. "</div></div>".
 	
@@ -78,6 +82,8 @@ mail($email_to, $email_subject, $email_message, $headers);
 
 
 ?>
+
+<a href="../index.html">Home</a>
 
 </body>
 </html>
