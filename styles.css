@@ -83,6 +83,62 @@ footer p {
 
 /*styles for cards on site*/
 
+.index-card-1 {
+	
+}
+
+.index-card-1 a{
+	margin-top:40%;
+}
+
+.index-card-1 p{
+	top:50%; 
+	left:10%; 
+	width:80%;
+}
+
+.index-card-2 {
+	
+}
+
+.index-card-2 a{
+	margin-top:45%;
+}
+
+.index-card-2 p{
+	top:50%; 
+	left:10%; 
+	width:80%;
+}
+
+.services-card-1 {
+	
+}
+
+.services-card-1 a{
+	margin-top:40%;
+}
+
+.services-card-1 p{
+	top:50%; 
+	left:10%; 
+	width:80%;
+}
+
+.services-card-2 {
+	
+}
+
+.services-card-2 a{
+	margin-top:40%;
+}
+
+.services-card-2 p{
+	top:50%; 
+	left:10%; 
+	width:80%;
+}
+
 .card{
 	border:none;
 	margin-bottom:5%;
