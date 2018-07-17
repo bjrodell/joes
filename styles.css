@@ -151,6 +151,7 @@ footer p {
 
 .card-body img {
 	border-radius:10px;
+	
 }
 
 /*styles for nav*/
@@ -194,6 +195,7 @@ nav {
 			border-width: 1px;
 			padding: 10px;
 			border-radius: 15px;
+			
 }
 
 .img-overlay a {
