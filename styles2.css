@@ -83,58 +83,6 @@ footer p {
 
 /*styles for cards on site*/
 
-.index-card-1 {
-	
-}
-
-.index-card-1 a{
-	margin-top:40%;
-}
-
-.index-card-1 p{
-	top:50%; 
-	width:90%;
-}
-
-.index-card-2 {
-	
-}
-
-.index-card-2 a{
-	margin-top:45%;
-}
-
-.index-card-2 p{
-	top:50%;
-    width:90%;	
-}
-
-.services-card-1 {
-	
-}
-
-.services-card-1 a{
-	margin-top:40%;
-}
-
-.services-card-1 p{
-	top:50%;
-	width:90%;
-}
-
-.services-card-2 {
-	
-}
-
-.services-card-2 a{
-	margin-top:40%;
-}
-
-.services-card-2 p{
-	top:50%;
-	width:90%;
-}
-
 .card{
 	border:none;
 	margin-bottom:5%;
@@ -147,7 +95,6 @@ footer p {
 
 .card-body img {
 	border-radius:10px;
-	
 }
 
 /*styles for nav*/
@@ -191,7 +138,6 @@ nav {
 			border-width: 1px;
 			padding: 10px;
 			border-radius: 15px;
-			
 }
 
 .img-overlay a {
@@ -205,6 +151,7 @@ form {
 	background: #d8e7ff;
 	box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
 	border-radius: 15px;
+
 	padding:5%;
 	display: inline-block;
 	z-index: 2100;
@@ -221,14 +168,17 @@ form {
 }
 
 input[type=text], input[type=email], select {
-    margin:1%;
-	margin-top:8%;
+    
+	margin-bottom: 13px;
     padding: 8px 10px;
     display: inline-block;
     box-shadow: 3px 3px 3px  #aaa;
     border-radius: 10px;
 }
 
+label{
+	margin-bottom: 0px !important;
+}
 /*animation delays*/
 
 .delay-1 {
@@ -266,129 +216,14 @@ input[type=text], input[type=email], select {
 /*********** mobile specific stylesheet ********/
 
 @media screen and (min-width: 980px) /* Desktop */ {
-    .jumbotron-fluid img {
+  .jumbotron-fluid img
+	{
 		content: url("media/logo/headerlogo-large.png");
 	}
 	
-	header,nav {
-		width:87%;
-	}
-	
-	nav a {
-		font-size:1.1em;
-	}
-	
-	.page-content {
-		width:80%;
-		margin-left:10%;
-	}
-	
-	.card {
-		width:45%;
-		display:inline-block;
-	}
-	
-	.card-header h3 {
-		font-size:2.6em;
-	}
-	
-	footer h6 {
-		font-size:1.6em;
-	}
-	
-	footer h3 {
-		font-size:2.4em;
-	}
-	
-	footer p {
-		font-size:1.0em;
-	}
-	
-	footer .card {
-		width:100%;
-		padding-top:0%;
-	}
-	
-	footer, footer ul, footer .card {
-		max-height:150px;
-	}
-	
-	.index-card-1 a {
-		margin-top:50%;
-	}
-	
-	.index-card-2 a {
-		margin-top:60%;
-	}
-	
-	.services-card-2 a {
-		margin-top:45%;
-	}
-	
-	.pricing-card-1 {
-		margin-left:15%;
-	}
 }
 
 @media screen  and (max-width: 979px) /* Tablet */ {
-	/*styles for cards on site*/
-	
-	
-	
-	
-	.index-card-1 {
-	
-	}
-
-	.index-card-1 a {
-		margin-top:50%;
-	}
-
-	.index-card-1 p {
-		top:50%; 
-		width:80%;
-	}
-
-	.index-card-2 {
-	
-	}
-
-	.index-card-2 a{
-		margin-top:50%;
-	}
-
-	.index-card-2 p{
-		top:50%; 
-		width:80%;
-	}
-
-	.services-card-1 {
-		
-	}
-
-	.services-card-1 a{
-		margin-top:40%;
-	}
-
-	.services-card-1 p{
-		top:50%; 
-		left:10%; 
-		width:80%;
-	}
-
-	.services-card-2 {
-		
-	}
-
-	.services-card-2 a{
-		margin-top:40%;
-	}
-
-	.services-card-2 p{
-		top:50%; 
-		left:10%; 
-		width:80%;
-	}
 
 }
 
