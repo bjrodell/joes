@@ -271,7 +271,7 @@ input[type=text], input[type=email], select {
 	}
 	
 	header,nav {
-		width:90%;
+		width:87%;
 	}
 	
 	nav a {
@@ -290,6 +290,18 @@ input[type=text], input[type=email], select {
 	
 	.card-header h3 {
 		font-size:2.6em;
+	}
+	
+	footer h6 {
+		font-size:1.6em;
+	}
+	
+	footer h3 {
+		font-size:2.4em;
+	}
+	
+	footer p {
+		font-size:1.0em;
 	}
 	
 	footer .card {
