@@ -93,8 +93,7 @@ footer p {
 
 .index-card-1 p{
 	top:50%; 
-	left:10%; 
-	width:80%;
+	width:90%;
 }
 
 .index-card-2 {
@@ -106,9 +105,8 @@ footer p {
 }
 
 .index-card-2 p{
-	top:50%; 
-	left:10%; 
-	width:80%;
+	top:50%;
+    width:90%;	
 }
 
 .services-card-1 {
@@ -120,9 +118,8 @@ footer p {
 }
 
 .services-card-1 p{
-	top:50%; 
-	left:10%; 
-	width:80%;
+	top:50%;
+	width:90%;
 }
 
 .services-card-2 {
@@ -134,9 +131,8 @@ footer p {
 }
 
 .services-card-2 p{
-	top:50%; 
-	left:10%; 
-	width:80%;
+	top:50%;
+	width:90%;
 }
 
 .card{
@@ -275,12 +271,11 @@ input[type=text], input[type=email], select {
 	}
 	
 	header,nav {
-		width:80%;
-		margin-left:8%;
+		width:90%;
 	}
 	
 	nav a {
-		font-size:1.3em;
+		font-size:1.1em;
 	}
 	
 	.page-content {
@@ -325,7 +320,10 @@ input[type=text], input[type=email], select {
 
 @media screen  and (max-width: 979px) /* Tablet */ {
 	/*styles for cards on site*/
-
+	
+	
+	
+	
 	.index-card-1 {
 	
 	}
@@ -336,7 +334,6 @@ input[type=text], input[type=email], select {
 
 	.index-card-1 p {
 		top:50%; 
-		left:10%; 
 		width:80%;
 	}
 
@@ -350,7 +347,6 @@ input[type=text], input[type=email], select {
 
 	.index-card-2 p{
 		top:50%; 
-		left:10%; 
 		width:80%;
 	}
 
