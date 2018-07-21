@@ -167,6 +167,8 @@ nav {
 }
 
 .navbar-nav {
+	margin-left: auto;
+    margin-right: auto;
 	text-align: center !important;
 	background-color:#ffffff;
 	
