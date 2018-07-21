@@ -276,9 +276,23 @@ label{
 	animation-delay:2s;
 }
 
-/*********** mobile specific stylesheet ********/
+/*********** mobile specific stylesheet ******
 
-@media screen and (min-width: 980px) /* Desktop */ {
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+   **/
+
+@media screen and (min-width: 992px) /* Desktop */ {
     .jumbotron-fluid img {
 		
 	}
@@ -348,17 +362,22 @@ label{
 	}
 }
 
-@media screen  and (max-width: 979px) /* Tablet */ {
+@media screen  and (max-width: 992px) /* Tablet */ {
 	/*styles for cards on site*/
 	
 	.jumbotron-fluid img {
 		
 	}
 	
-	.container{
-		width: 100%;
-	}
-	
+	.jumbotron {
+	background-color:#ffffff;
+	background-image: url('media/logo/headerlogo2.png') !important;
+	background-size: 85%; 
+	background-position: bottom;
+	background-repeat: no-repeat;
+	height:500px;"
+}
+
 	
 	.index-card-1 {
 	
@@ -416,8 +435,22 @@ label{
 
 }
 
-@media screen and (max-width: 500px) /* Mobile */ {
+@media screen and (max-width: 576px) /* Mobile */ {
   .form-check-input{
 		margin-left:5%;
 	}
+	
+	.btn{
+		top: -40px;
+		z-index: 2000;
+	
+	}
+	
+	.jumbotron {
+	background-color:#ffffff;
+	background-image: url('media/logo/headerlogo2.png') !important;
+	background-size: 85%; 
+	background-position: bottom;
+	background-repeat: no-repeat;
+	height:400px;"
 }
