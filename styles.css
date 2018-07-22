@@ -65,6 +65,10 @@ a:hover {
 
 /* styles for footers on all pages*/
 
+footer {
+	padding-top:0;
+}
+
 footer .list-group-item {
 	border:none;
 	margin:0;
