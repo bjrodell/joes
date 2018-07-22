@@ -70,10 +70,6 @@ a:hover {
 
 /* styles for footers on all pages*/
 
-footer {
-	padding-top:0;
-}
-
 footer .list-group-item {
 	border:none;
 	margin:0;
@@ -162,20 +158,15 @@ footer p {
 /*styles for nav*/
 
 nav {
-	
 }
 
 #nav{
 	background-color:#ffffff !important; /* needs to be same color as navbar-nav BG color*/
-	
 }
 
 .navbar-nav {
-	margin-left: auto;
-    margin-right: auto;
 	text-align: center !important;
 	background-color:#ffffff;
-	
 }
 
 .collapse, nav {
@@ -219,7 +210,6 @@ form {
 	background: #d8e7ff;
 	box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
 	border-radius: 15px;
-
 	padding:5%;
 	display: inline-block;
 	z-index: 2100;
@@ -236,16 +226,12 @@ form {
 }
 
 input[type=text], input[type=email], select {
-    
-	margin-bottom: 13px;
+    margin:1%;
+	margin-top:8%;
     padding: 8px 10px;
     display: inline-block;
     box-shadow: 3px 3px 3px  #aaa;
     border-radius: 10px;
-}
-
-label{
-	margin-bottom: 0px !important;
 }
 
 /*animation delays*/
@@ -282,34 +268,18 @@ label{
 	animation-delay:2s;
 }
 
-/*********** mobile specific stylesheet ******
+/*********** mobile specific stylesheet ********/
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-
-   **/
-
-@media screen and (min-width: 992px) /* Desktop */ {
+@media screen and (min-width: 980px) /* Desktop */ {
     .jumbotron-fluid img {
-		
+		content: url("media/logo/headerlogo-large.png");
 	}
 	
 	header,nav {
-		
 		width:87%;
 	}
 	
 	nav a {
-		
 		font-size:1.1em;
 	}
 	
@@ -368,35 +338,11 @@ label{
 	}
 }
 
-@media screen  and (max-width: 992px) /* Tablet */ {
+@media screen  and (max-width: 979px) /* Tablet */ {
 	/*styles for cards on site*/
 	
-	.jumbotron-fluid img {
-		
-	}
 	
-	.jumbotron {
-	background-color:#ffffff;
-	background-image: url('media/logo/headerlogo2.png') !important;
-	background-size: 85%; 
-	background-position: bottom;
-	background-repeat: no-repeat;
-	height:500px;"
-}
-
-
-	.navbar-collapse li {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-    text-align: center;
-	}
-	.navbar ul {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-    text-align: center;
-	}
+	
 	
 	.index-card-1 {
 	
@@ -454,22 +400,8 @@ label{
 
 }
 
-@media screen and (max-width: 576px) /* Mobile */ {
+@media screen and (max-width: 500px) /* Mobile */ {
   .form-check-input{
 		margin-left:5%;
 	}
-	
-	.btn{
-		top: -40px;
-		z-index: 2000;
-	
-	}
-	
-	.jumbotron {
-	background-color:#ffffff;
-	background-image: url('media/logo/headerlogo2.png') !important;
-	background-size: 85%; 
-	background-position: bottom;
-	background-repeat: no-repeat;
-	height:400px;"
 }
