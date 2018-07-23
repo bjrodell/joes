@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*** color pallette  **********************
+
+#d70504 - bright red
+#8c6d73 (140,109,115) - light purple
+#4b86cb - blue
+#dddbdc - grey - light
+#080401 - black
+*/
+
+/**************************** HEADING TAG STYLES *********************************/
+
+h1, h2, h3, h4 {
+	color:#080401;
+}
+
+h5, h6 {
+	color:#d70504;
+}
+
+/***************************** LINK STYLES ************************************/
+a {
+	text-decoration:none;
+	color:#4b86cb;
+	font-weight:500;
+}
+
+a:hover {
+	text-decoration:none;
+	color:#4b86fb;
+}
+
+/***************************** BUTTON STYLES *********************************/
+
+.btn-info {
+	background-color:#4b86cb;
+	border-color:#4b86cb;
+}
+
+.btn-info:hover {
+	border-color:#4b86cb;
+	background-color:#4b86fb;
+}
+
+.btn-outline-primary {
+	border-color:#4b86cb;
+}
+
+/***************************** HEADER STYLES ******************************/
+
+.jumbotron img {
+	max-width:90%;
+	margin-left:5%;
+}
+
+.jumbotron {
+	background-color:#ffffff;
+}
+
+.jumbotron .container {
+	height:400px;  
+}
+
+/***************************** FOOTER STYLES *******************************/
+
+
+footer .list-group-item {
+	border:none;
+	margin:0;
+	padding:0;
+}
+
+footer .list-group {
+	margin-bottom:8%;
+	margin-top:6%;
+}
+
+footer p {
+	font-size:0.8em;
+	margin-bottom:0;
+}
+
+/****************************** CARD STYLES ********************************/
+
+.card{
+	border:none;
+	margin-bottom:5%;
+}
+
+.card-header, .card-footer {
+	border:none;
+	background-color:#ffffff;
+}
+
+.card-body img {
+	border-radius:10px;
+}
+
+.img-overlay {
+    position: relative;
+	color: blue;
+	background-color:  rgba(0,0,0, 0.5);
+	border-style: solid;
+    border-color: gray;
+	border-width: 1px;
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.img-overlay a {
+	position:relative;
+}
+
+
+/**************************** NAVIGATION STYLES ***************************/
+
+.navbar-nav {
+	text-align: center;
+	background-color:#ffffff;
+}
+
+/**************************** CONTACT US FORM *****************************/
+
+form {
+	text-shadow: 0px 1px 1px #000;
+	background: #d8e7ff;
+	box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+	padding:5%;
+	display: inline-block;
+	z-index: 2100;
+}
+
+
+.form-control:focus{
+	border-color: #ffffff;  box-shadow: none; -webkit-box-shadow: none;
+	border-width: 1px;
+} 
+	
+.has-error .form-control:focus{
+	box-shadow: none; -webkit-box-shadow: none;
+}
+
+input[type=text], input[type=email], select {
+    margin:1%;
+	margin-top:8%;
+    padding: 8px 10px;
+    display: inline-block;
+    box-shadow: 3px 3px 3px  #aaa;
+    border-radius: 10px;
+}
+
+/************************* ANIMATION DELAYS **********************************/
+
+.delay-1 {
+	animation-delay:.25s;
+}
+
+.delay-2 {
+	animation-delay:.5s;
+}
+
+.delay-3 {
+	animation-delay:.75s;
+}
+
+.delay-4 {
+	animation-delay:1s;
+}
+
+.delay-5 {
+	animation-delay:1.25s;
+}
+
+.delay-6 {
+	animation-delay:1.5s;
+}
+
+.delay-7 {
+	animation-delay:1.75s;
+}
+
+.delay-8 {
+	animation-delay:2s;
+}
+
+
+
+
+
+
