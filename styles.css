@@ -240,6 +240,10 @@ input[type=text], input[type=email], select {
     border-radius: 10px;
 }
 
+input[type=checkbox] { 
+  transform: absolute;
+  }
+
 label{
 	margin-bottom: 0px !important;
 }
@@ -387,12 +391,7 @@ label{
 	margin-right: auto;
     text-align: center;
 	}
-	.navbar ul {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-    text-align: center;
-	}
+	
 	
 	.index-card-1 {
 	
