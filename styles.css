@@ -2,84 +2,13 @@
 /* CSS Document */
 
 
-/*** color pallette  **********************
-
-#d70504 - bright red
-#8c6d73 (140,109,115) - light purple
-#4b86cb - blue
-#dddbdc - grey - light
-#080401 - black
-*/
-h1, h2, h3, h4 {
-	color:#080401;
-}
-
-h5, h6 {
-	color:#d70504;
-}
-
-/*base styles for a tags*/
-a {
-	text-decoration:none;
-	color:#4b86cb;
-	font-weight:500;
-}
-
-a:hover {
-	text-decoration:none;
-	color:#4b86fb;
-}
-
-/*button styles*/
-
-.btn-info {
-	background-color:#4b86cb;
-	border-color:#4b86cb;
-}
-
-.btn-info:hover {
-	border-color:#4b86cb;
-	background-color:#4b86fb;
-}
-
-.btn-outline-primary {
-	border-color:#4b86cb;
-}
-
-/*styles for headers on all pages*/
-.jumbotron img {
-	max-width:90%;
-	margin-left:5%;
-}
-
-.jumbotron {
-	background-color:#ffffff;
-}
-
-.jumbotron .container {
-	height:400px;  
-}
 
 
 
 
-/* styles for footers on all pages*/
 
-footer .list-group-item {
-	border:none;
-	margin:0;
-	padding:0;
-}
 
-footer .list-group {
-	margin-bottom:8%;
-	margin-top:6%;
-}
 
-footer p {
-	font-size:0.8em;
-	margin-bottom:0;
-}
 
 /*styles for cards on site*/
 
@@ -153,15 +82,17 @@ footer p {
 /*styles for nav*/
 
 nav {
+	
 }
 
 #nav{
-	background-color:#ffffff !important; /* needs to be same color as navbar-nav BG color*/
+	background-color:#ffffff; /* needs to be same color as navbar-nav BG color*/
+	
 }
 
 .navbar-nav {
-	text-align: center !important;
-	background-color:#ffffff;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .collapse, nav {
@@ -169,15 +100,15 @@ nav {
 }
 
 .active{
-	line-height: 35px !important;
-	background-color: #dddbdc !important;
-	border-color: #dddbdc !important;
+	line-height: 35px;
+	background-color: #dddbdc;
+	border-color: #dddbdc;
 	vertical-align: middle;
 	margin: none;
-	border-radius: 5px !important;
-	border-width: 0px !important;
+	border-radius: 5px;
+	border-width: 0px ;
 	height: 40px;
-	border-style: solid !important;
+	border-style: solid ;
 }
 
 /*styles for image overlay*/
@@ -194,97 +125,48 @@ nav {
 			
 }
 
-.img-overlay a {
-	position:relative;
-}
-
-/*quote page styles*/
-
-form {
-	text-shadow: 0px 1px 1px #000;
-	background: #d8e7ff;
-	box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
-	border-radius: 15px;
-	padding:5%;
-	display: inline-block;
-	z-index: 2100;
-}
 
 
-.form-control:focus{
-		border-color: #ffffff;  box-shadow: none; -webkit-box-shadow: none !important;
-		border-width: 1px;
-} 
-		
-.has-error .form-control:focus{
-		box-shadow: none; -webkit-box-shadow: none !important;
-}
+/*********** mobile specific stylesheet ******
 
-input[type=text], input[type=email], select {
-    margin:1%;
-	margin-top:8%;
-    padding: 8px 10px;
-    display: inline-block;
-    box-shadow: 3px 3px 3px  #aaa;
-    border-radius: 10px;
-}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
 
-/*animation delays*/
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
 
-.delay-1 {
-	animation-delay:.25s;
-}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
 
-.delay-2 {
-	animation-delay:.5s;
-}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
 
-.delay-3 {
-	animation-delay:.75s;
-}
+   **/
 
-.delay-4 {
-	animation-delay:1s;
-}
-
-.delay-5 {
-	animation-delay:1.25s;
-}
-
-.delay-6 {
-	animation-delay:1.5s;
-}
-
-.delay-7 {
-	animation-delay:1.75s;
-}
-
-.delay-8 {
-	animation-delay:2s;
-}
-
-/*********** mobile specific stylesheet ********/
-
-@media screen and (min-width: 980px) /* Desktop */ {
+@media screen and (min-width: 992px) /* Desktop */ {
     .jumbotron-fluid img {
-		content: url("media/logo/headerlogo-large.png");
+		
 	}
 	
 	header,nav {
+		
 		width:87%;
 	}
 	
 	nav a {
+		
 		font-size:1.1em;
 	}
 	
 	.page-content {
-		width:80%;
-		margin-left:10%;
+		
+		width:100%;
+		
 	}
 	
 	.card {
 		width:45%;
+		
 		display:inline-block;
 	}
 	
@@ -315,6 +197,7 @@ input[type=text], input[type=email], select {
 	
 	.index-card-1 a {
 		margin-top:50%;
+		
 	}
 	
 	.index-card-2 a {
@@ -330,10 +213,29 @@ input[type=text], input[type=email], select {
 	}
 }
 
-@media screen  and (max-width: 979px) /* Tablet */ {
+@media screen  and (max-width: 992px) /* Tablet */ {
 	/*styles for cards on site*/
 	
+	.jumbotron-fluid img {
+		
+	}
 	
+	.jumbotron {
+	background-color:#ffffff;
+	background-image: url('media/logo/headerlogo2.png') !important;
+	background-size: 85%; 
+	background-position: bottom;
+	background-repeat: no-repeat;
+	height:500px;"
+}
+
+
+	.navbar-collapse li {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+    text-align: center;
+	}
 	
 	
 	.index-card-1 {
@@ -392,8 +294,22 @@ input[type=text], input[type=email], select {
 
 }
 
-@media screen and (max-width: 500px) /* Mobile */ {
+@media screen and (max-width: 576px) /* Mobile */ {
   .form-check-input{
 		margin-left:5%;
 	}
+	
+	.btn{
+		top: -40px;
+		z-index: 2000;
+	
+	}
+	
+	.jumbotron {
+	background-color:#ffffff;
+	background-image: url('media/logo/headerlogo2.png') !important;
+	background-size: 85%; 
+	background-position: bottom;
+	background-repeat: no-repeat;
+	height:400px;"
 }

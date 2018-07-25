@@ -19,14 +19,11 @@
 	
 	<script src="//use.edgefonts.net/josefin-sans;source-sans-pro.js"></script><!--global fonts-->
 	
-	<!-- CSS containing social media icons:  Reference https://www.w3schools.com/howto/howto_css_social_media_buttons.asp for more info -->
+		<!-- CSS containing social media icons:  Reference https://www.w3schools.com/howto/howto_css_social_media_buttons.asp for more info -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 	
-	<!-- theme related css file-->
-	<link rel="stylesheet" type="text/css" href="../theme1.css">
-	
 	<!--site specific stylesheet-->
-	<link rel="stylesheet" type="text/css" href="../styles2.css">
+	<link rel="stylesheet" type="text/css" href="../styles.css">
 	<link rel="stylesheet" type="text/css" href="../css/animate.css">
 <style>
 
@@ -84,7 +81,7 @@
 						<a href="#" class="fa fa-instagram" style="text-decoration : none"></a>
 						<a href="#" class="fa fa-pinterest" style="text-decoration : none"></a>
 					</h2>
-					<img src="../media/logo/headerlogo.png">
+					
 				</div>
 			</div>
 		</header><!--closes header-->
@@ -94,42 +91,37 @@
 			<!--text inputs-->
 				<div class="form-group">
 					<legend class="legendheader"><h3>Contact Information</h3></legend>
-					<p></P>
+					
+					<!-- link to quote 2 --- REMOVE WHEN DONE-->
+					
+					<br> <a href = "quote2.html"> link to quote 2</a>
+					
+					<!-- link to quote 2 --- REMOVE WHEN DONE-->
+					
 						<div class="form-row">
-							<label for="nameinput" class="form-label" >Name:</label>
-							<input id="nameinput" class="form-control" type="text" name="clientname" maxlength="70" required>
-						</div>
-						<div class="form-row" >
-							<label for="addressinput" style="">Address:</label>
-							<input id="addressinput" class="form-control" type="text" name="clientaddress" maxlength="70" required>
-							
-						</div>
-						
-						<div class="form-row">
-							<div class="col" style="text-align: left">
-								<label for="cityinput" class="">City:</label>
-								<input id="cityinput" class=" form-control" type="text" name="clientcity"maxlength="70" required>
-							</div>
-							<div class="col-2" style="text-align: left">
-								
-									<label for="stateinput" class=" form-label" >State:</label>
-									<input id="stateinput" class=" form-control"  type="text" name="clientstate"maxlength="2" required>
-								
-								
-							</div>
-						<div class="col-3" style="text-align: left">
-									<label for="stateinput" class=" form-label">Zip:</label>
-									<input id="zipinput" class=" form-control"  type="text" name="clientzip"maxlength="10" required>
-								</div>
-								
+							<label for="nameinput" class="col-3 form-label" >Name:</label>
+							<input id="nameinput" class="col-7 form-control" type="text" name="clientname" maxlength="70" required>
 						</div>
 						<div class="form-row">
-							<label for="emailinput" class="form-label ">Email:</label>
-							<input id="emailinput" class="form-control" type="email" name="email" maxlength="60" required>
+							<label for="addressinput" class="col-3 form-label">Address:</label>
+							<input id="addressinput" class="col-6 form-control" type="text" name="clientaddress" maxlength="70" required>
 						</div>
 						<div class="form-row">
-							<label for="phoneinput" class="form-label">Phone:</label>
-							<input id="phoneinput" class=" form-control" type="text" name="phone" maxlength="12" required>
+							<label for="cityinput" class="col-3 form-label">City:</label>
+							<input id="cityinput" class="col-6 form-control" type="text" name="clientcity"maxlength="70" required>
+						</div>
+						<div class="form-row">
+							<label for="stateinput" class="col-3 form-label">State,Zip:</label>
+							<input id="stateinput" class="col-2 form-control"  type="text" name="clientstate"maxlength="2" required>
+							<input id="zipinput" class="col-3 form-control"  type="text" name="clientzip"maxlength="10" required>
+						</div>
+						<div class="form-row">
+							<label for="emailinput" class="col-3 form-label ">Email:</label>
+							<input id="emailinput" class="col-8 form-control" type="email" name="email" maxlength="60" required>
+						</div>
+						<div class="form-row">
+							<label for="phoneinput" class="col-3 form-label">Phone:</label>
+							<input id="phoneinput" class="col-5 form-control" type="text" name="phone" maxlength="12" required>
 						</div>
 				</div><!--closes form-group-->
 				
