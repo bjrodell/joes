@@ -58,11 +58,6 @@ a:hover {
 
 .jumbotron {
 	background-color:#ffffff;
-	background-image: url('media/logo/headerlogo2.png') !important;
-	background-size: 85%; 
-	background-position: bottom right;
-	background-repeat: no-repeat;
-	height:450px;"
 }
 
 .jumbotron .container {
@@ -141,29 +136,21 @@ form {
 
 
 .form-control:focus{
-		border-color: #ffffff;  box-shadow: none; -webkit-box-shadow: none;
-		border-width: 1px;
+	border-color: #ffffff;  box-shadow: none; -webkit-box-shadow: none;
+	border-width: 1px;
 } 
-		
+	
 .has-error .form-control:focus{
-		box-shadow: none; -webkit-box-shadow: none;
+	box-shadow: none; -webkit-box-shadow: none;
 }
 
 input[type=text], input[type=email], select {
-    
-	margin-bottom: 13px;
+    margin:1%;
+	margin-top:8%;
     padding: 8px 10px;
     display: inline-block;
     box-shadow: 3px 3px 3px  #aaa;
     border-radius: 10px;
-}
-
-input[type=checkbox] { 
-  transform: absolute;
-  }
-
-label{
-	margin-bottom: 0px;
 }
 
 /************************* ANIMATION DELAYS **********************************/
