@@ -1,15 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-
-
-
-
-
-
-
-
-
 /*styles for cards on site*/
 
 .index-card-1 {
@@ -222,11 +213,11 @@ nav {
 	
 	.jumbotron {
 	background-color:#ffffff;
-	background-image: url('media/logo/headerlogo2.png') !important;
+	background-image: url('media/logo/headerlogo2.png');
 	background-size: 85%; 
 	background-position: bottom;
 	background-repeat: no-repeat;
-	height:500px;"
+	height:500px;
 }
 
 
