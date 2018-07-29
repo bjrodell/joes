@@ -3,13 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pricing</title>
+	<title>Services</title>
 	<link rel="icon" href="#"><!-- used for icon in tab-->
 	
 	<!--BOOTSTRAP 4-->
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/marcus.css">
+	
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Popper JS -->
@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 	
 	<!--site specific stylesheet-->
-	<link rel="stylesheet" type="text/css" href="../styles.css">
+	<link rel="stylesheet" type="text/css" href="../styles.css"> 
 	<link rel="stylesheet" type="text/css" href="../css/animate.css">
 </head>
 
@@ -33,7 +33,9 @@
 	
 		<header>	
 			<!-- navigation-->
+			<nav id="nav" class="visible navbar navbar-expand-lg navbar-light bg-light">
 			
+				<a class="navbar-brand" href="#"></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -41,16 +43,22 @@
 				<div class="collapse navbar-collapse " id="navbarSupportedContent" >
 				
 				<ul class="navbar-nav ">
+					<li class="nav-item col-md-2 " >
 						<a href='../index.html'>Home</a>
 					</li>
 					<li class="nav-item col-md-3" >
+						<a href='quote.html' >Request A Quote</a>
 					</li>
+					<li class="nav-item col-md-2 active" >
 						<a href='services.html'>Services</a>
 					</li>
+					<li class="nav-item col-md-3" >
 						<a href='howitworks.html'>How it Works</a>
 					</li>
+					<li class="nav-item col-md-2" >
 						<a href='pricing.html'>Pricing</a>
 					</li>
+					<li class="nav-item col-md-4" >
 						<a href="tel:5852453226">Call Today! (585) 245-3226</a>
 					</li>
 				</ul>
@@ -65,28 +73,57 @@
 					<h6><a href="mailto:joesservice2018@gmail.com">joesservice2018@gmail.com</a></h6>
 					<a href="quote.html" class="btn btn-info">Request A Quote</a>
 					<h2> <!-- make css classes-->
+						<a href="#" class="fa fa-facebook"  ></a>
+						<a href="#" class="fa fa-twitter" ></a>
+						<a href="#" class="fa fa-instagram" ></a>
+						<a href="#" class="fa fa-pinterest" ></a>
 					</h2>
-					
+				
 				</div>
 			</div>
 		</header><!--closes header-->
 		
-		<div class="page-content">
-		<div class="card pricing-card-1 animated delay-2">
-			<div class="card-header">
-				<h3 class="animated card-title delay-2">Pricing</h3>
-			</div>
-			<div class="card-body d-none">
-				<ul>
-					<li class="animated delay-5"><h2>$25 to come to your home for a quote</h2></li>
-					<li class="animated delay-7"><h2>$75 Emergency Roadside fee</h2></li>
-				</ul>
-			</div><!--closes card-body-->
-			<div class="card-footer">
-				<a class="btn btn-info" href="quote.html">Request A Quote</a>
-			</div><!--closes card-footer-->
-		</div><!--closes card-->
+		<div class="page-content ">
+		<center>
+			<div class="card services-card-1 animated delay-1">
+				<div class="card-header">
+					<h3 class="animated card-title delay-2">Driveway Repair</h3>
+				</div>
+				<div class="card-body d-none">
+					<img src="../media/homemechanic.jpg" class="card-img-top">
+					<div class="card-img-overlay">
+						<p class="card-text text-center img-overlay text-white">Request repairs while you wait in the comfort of your own home!</p>
+						<div class="container">
+							<div class="row">
+								<div class="col-3 "></div>
+								<a href="../content/quote.html" class="btn btn-info col-6">Request A Quote</a>
+							</div><!-- closes row-->
+						</div><!--closes container-->
+					</div><!--closes image overlay-->
+				</div><!--closes card body-->
+			</div><!--closes card-->
+			
+			
+			<div class="card services-card-2 animated delay-1">
+				<div class="card-header">
+					<h3 class="animated card-title delay-2">Emergency Assistance</h3>
+				</div>
+				<div class="card-body d-none">
+					<img src="../media/roadsidebreakdown.jpg" class="card-img-top">
+					<div class="card-img-overlay">
+						<p class="card-text img-overlay text-white">In a jam? Stuck on the side of the road? Call Us Now!</p>
+						<div class="container">
+							<div class="row">
+								<div class="col-3"></div>
+								<a href="tel:5855555555" class="btn btn-info col-6" >Call Us</a>
+							</div><!-- closes row-->
+						</div><!--closes container-->
+					</div><!--closes image overlay-->
+				</div><!--closes card body-->
+			</div><!--closes card-->
+		</center>
 		</div><!--closes page-content-->
+	</div><!--closes container-fluid-->
 		
 		<footer>
 			<!-- address, contact info-->
@@ -109,6 +146,11 @@
 					<li class="list-group-item">
 						<p>Serving the Western New York and Finger Lakes Regions</p>
 					</li>
+				    <li class="social-foot">
+						<a href="#" class="fa fa-facebook"  ></a>
+						<a href="#" class="fa fa-twitter" ></a>
+						<a href="#" class="fa fa-instagram" ></a>
+						<a href="#" class="fa fa-pinterest" ></a>
 					</li>
 				</ul>
 			</div>
