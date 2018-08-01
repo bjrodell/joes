@@ -1,6 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
 
+/** bootstrap overrides */
+
+.nav-item{
+	line-height: 35px;
+}
+
+
+
+
+/** end of bootstrap overrides*/
+
+.social-foot{
+	font-size: 2.5em;
+}
+
+.text-left{
+	text-align: left;
+}
+
+.fa{
+	text-decoration: none;
+}
 
 
 
@@ -86,7 +108,12 @@ nav {
 }
 
 #nav{
+<<<<<<< HEAD
 	background-color:#ffffff; /* needs to be same color as navbar-nav BG color*/
+=======
+	background-color:#ffffff !important; /* needs to be same color as navbar-nav BG color*/
+	padding: 0px;
+>>>>>>> 2c0a5b3453dcfb76a3f24903ab43f2bb51e5b68d
 	
 }
 
