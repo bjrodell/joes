@@ -108,12 +108,10 @@ nav {
 }
 
 #nav{
-<<<<<<< HEAD
+
 	background-color:#ffffff; /* needs to be same color as navbar-nav BG color*/
-=======
-	background-color:#ffffff !important; /* needs to be same color as navbar-nav BG color*/
 	padding: 0px;
->>>>>>> 2c0a5b3453dcfb76a3f24903ab43f2bb51e5b68d
+
 	
 }
 
