@@ -10,7 +10,7 @@
 
 <?php
 
-$email_to = "bjrodell@gmail.com, maneely84@gmail.com";
+$email_to = "joesservice2018@gmail.com";
 $email_subject = "Customer Information Request";
  
 // Escape user inputs for security - references the name attribute on the contact page in the POST 
@@ -26,6 +26,7 @@ $customer_phone = $_POST['phone'];
 	
 $driveway_repair = $_POST['drivewayrepair'];
 $emergency_roadside = $_POST['emergencyroadside'];
+$pickup = $_POST['pickup'];
 $other_reason = $_POST['other'];
 	
 $additional_comments = $_POST['comments'];
@@ -62,6 +63,7 @@ $email_message = "
 	
 				 "<div><h4>Driveway Repair: </h4>". "<div class='data'>". $driveway_repair. "</div></div>".
 				 "<div><h4>Emergency Roadside: </h4>". "<div class='data'>". $emergency_roadside. "</div></div>".
+				 "<div><h4>Pickup: </h4>". "<div class='data'>". $pickup. "</div></div>".
 				 "<div><h4>Other Reason: </h4>". "<div class='data'>". $other_reason. "</div></div>".
 				 
 	
@@ -83,6 +85,7 @@ mail($email_to, $email_subject, $email_message, $headers);
 
 ?>
 
+<h2>Thank You For Your Submission. We will contact you shortly.</h2>
 <a href="../index.html">Home</a>
 
 </body>
