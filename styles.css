@@ -2,29 +2,6 @@
 /* CSS Document */
 
 
-/** bootstrap overrides */
-
-.nav-item{
-	line-height: 35px;
-}
-
-
-
-
-/** end of bootstrap overrides*/
-
-.social-foot{
-	font-size: 2.5em;
-}
-
-.text-left{
-	text-align: left;
-}
-
-.fa{
-	text-decoration: none;
-}
-
 /*** color pallette  **********************
 
 #d70504 - bright red
@@ -33,80 +10,15 @@
 #dddbdc - grey - light
 #080401 - black
 */
-h1, h2, h3, h4 {
-	color:#080401;
-}
-
-h5, h6 {
-	color:#d70504;
-}
 
 /*base styles for a tags*/
-a {
-	text-decoration:none;
-	color:#4b86cb;
-	font-weight:500;
-}
 
-a:hover {
-	text-decoration:none;
-	color:#4b86fb;
-}
 
-/*button styles*/
 
-.btn-info {
-	background-color:#4b86cb;
-	border-color:#4b86cb;
-}
-
-.btn-info:hover {
-	border-color:#4b86cb;
-	background-color:#4b86fb;
-}
-
-.btn-outline-primary {
-	border-color:#4b86cb;
-}
-
-/*styles for headers on all pages*/
-.jumbotron img {
-	max-width:90%;
-	margin-left:5%;
-}
+/*styles for header*/
 
 .jumbotron {
-	background-color:#ffffff;
-	background-image: url('media/logo/headerlogo2.png') !important;
-	background-size: 85%; 
-	background-position: bottom right;
-	background-repeat: no-repeat;
-	height:450px;"
-}
-
-.jumbotron .container {
-	height:400px;  
-}
-
-
-
-
-/* styles for footers on all pages*/
-
-footer .list-group-item {
-	border:none;
-	margin:0;
-	padding:0;
-}
-
-footer .list-group {
-	margin-bottom:8%;
-	margin-top:6%;
-}
-
-footer p {
-	font-size:0.8em;
-	margin-bottom:0;
+	max-height:400px;
 }
 
 
@@ -136,6 +48,58 @@ footer p {
 .index-card-2 p{
 	top:50%;
     width:90%;	
+}
+
+.index-card-3 {
+	
+}
+
+.index-card-3 a{
+	margin-top:50%;
+}
+
+.index-card-3 p{
+	top:50%; 
+	width:80%;
+}
+	
+.index-card-4 {
+	
+}
+
+.index-card-4 a{
+	margin-top:50%;
+}
+
+.index-card-4 p{
+	top:50%; 
+	width:80%;
+}
+	
+.index-card-5 {
+
+}
+
+.index-card-5 a{
+	margin-top:50%;
+}
+
+.index-card-5 p{
+	top:50%; 
+	width:80%;
+}
+	
+.index-card-6 {
+
+}
+
+.index-card-6 a{
+	margin-top:40%;
+}
+
+.index-card-6 p{
+	top:50%; 
+	width:80%;
 }
 
 .services-card-1 {
@@ -192,10 +156,6 @@ nav {
 }
 
 .navbar-nav {
-	margin-left: auto;
-    margin-right: auto;
-	text-align: center !important;
-	background-color:#ffffff;
 	
 }
 
@@ -218,20 +178,16 @@ nav {
 /*styles for image overlay*/
 
 .img-overlay {
-            position: relative;
-			color: blue;
-			background-color:  rgba(0,0,0, 0.5);
-			border-style: solid;
-            border-color: gray;
-			border-width: 1px;
-			padding: 10px;
-			border-radius: 15px;
-			
+    position: relative;
+	color: blue;
+	background-color:  rgba(0,0,0, 0.5);
+	border-style: solid;
+    border-color: gray;
+	border-width: 1px;
+	padding: 10px;
+	border-radius: 15px;	
 }
 
-.img-overlay a {
-	position:relative;
-}
 
 /*quote page styles*/
 
@@ -257,7 +213,6 @@ form {
 }
 
 input[type=text], input[type=email], select {
-    
 	margin-bottom: 13px;
     padding: 8px 10px;
     display: inline-block;
@@ -271,40 +226,6 @@ input[type=checkbox] {
 
 label{
 	margin-bottom: 0px !important;
-}
-
-/*animation delays*/
-
-.delay-1 {
-	animation-delay:.25s;
-}
-
-.delay-2 {
-	animation-delay:.5s;
-}
-
-.delay-3 {
-	animation-delay:.75s;
-}
-
-.delay-4 {
-	animation-delay:1s;
-}
-
-.delay-5 {
-	animation-delay:1.25s;
-}
-
-.delay-6 {
-	animation-delay:1.5s;
-}
-
-.delay-7 {
-	animation-delay:1.75s;
-}
-
-.delay-8 {
-	animation-delay:2s;
 }
 
 /*********** mobile specific stylesheet ******
@@ -322,58 +243,15 @@ label{
 @media (min-width: 1200px) { ... }
 
    **/
+   
+/* Small devices (landscape phones, 576px and up)*/
 
-@media screen and (min-width: 992px) /* Desktop */ {
-    .jumbotron-fluid img {
-		
-	}
+	@media screen and (min-width: 576px){
 	
-	header,nav {
-		
-		width:87%;
 	}
-	
-	nav a {
-		
-		font-size:1.1em;
-	}
-	
-	.page-content {
-		
-		width:100%;
-		
-	}
-	
-	.card {
-		width:45%;
-		
-		display:inline-block;
-	}
-	
-	.card-header h3 {
-		font-size:2.6em;
-	}
-	
-	footer h6 {
-		font-size:1.6em;
-	}
-	
-	footer h3 {
-		font-size:2.4em;
-	}
-	
-	footer p {
-		font-size:1.0em;
-	}
-	
-	footer .card {
-		width:100%;
-		padding-top:0%;
-	}
-	
-	footer, footer ul, footer .card {
-		max-height:150px;
-	}
+
+	@media screen and (min-width: 768px) /* Desktop */ {
+    
 	
 	.index-card-1 {
 	
@@ -464,30 +342,26 @@ label{
 	}
 }
 
-@media screen  and (max-width: 992px) /* Tablet */ {
-	/*styles for cards on site*/
-	
-	.jumbotron-fluid img {
+	@media screen  and (min-width: 992px) /* Tablet */ {
 		
+		
+	/*header styles*/
+	
+	.headertext {
+		width:50%;
+		float:left;
+	}
+
+	.headerlogo {
+		width:45%;
+		float:right;
 	}
 	
 	.jumbotron {
-	background-color:#ffffff;
-	background-image: url('media/logo/headerlogo2.png');
-	background-size: 85%; 
-	background-position: bottom;
-	background-repeat: no-repeat;
-	height:500px;
-}
-
-
-	.navbar-collapse li {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-    text-align: center;
+		max-height:360px;
 	}
-	
+		
+	/*styles for cards on site*/
 	
 	.index-card-1 {
 	
@@ -597,22 +471,9 @@ label{
 
 }
 
-@media screen and (max-width: 576px) /* Mobile */ {
-  .form-check-input{
-		margin-left:5%;
+	@media screen and (min-width: 1200px) {
+		
 	}
-	
-	.btn{
-		top: -40px;
-		z-index: 2000;
-	
-	}
-	
-	.jumbotron {
-	background-color:#ffffff;
-	background-image: url('media/logo/headerlogo2.png') !important;
-	background-size: 85%; 
-	background-position: bottom;
-	background-repeat: no-repeat;
-	height:400px;"
-}
+
+
+  
