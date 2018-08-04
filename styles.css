@@ -375,14 +375,85 @@ label{
 		max-height:150px;
 	}
 	
+	.index-card-1 {
+	
+	}
+
 	.index-card-1 a {
 		margin-top:50%;
-		
+	}
+
+	.index-card-1 p {
+		top:50%; 
+		width:80%;
+	}
+
+	.index-card-2 {
+	
+	}
+
+	.index-card-2 a{
+		margin-top:50%;
+	}
+
+	.index-card-2 p{
+		top:50%; 
+		width:80%;
 	}
 	
-	.index-card-2 a {
-		margin-top:60%;
+	.index-card-3 {
+	
 	}
+
+	.index-card-3 a{
+		margin-top:50%;
+	}
+
+	.index-card-3 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-4 {
+	
+	}
+
+	.index-card-4 a{
+		margin-top:50%;
+	}
+
+	.index-card-4 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-5 {
+	
+	}
+
+	.index-card-5 a{
+		margin-top:50%;
+	}
+
+	.index-card-5 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-6 {
+	
+	}
+
+	.index-card-6 a{
+		margin-top:50%;
+	}
+
+	.index-card-6 p{
+		top:60%; 
+		width:80%;
+	}
+	
+	
 	
 	.services-card-2 a {
 		margin-top:45%;
@@ -440,6 +511,58 @@ label{
 	}
 
 	.index-card-2 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-3 {
+	
+	}
+
+	.index-card-3 a{
+		margin-top:50%;
+	}
+
+	.index-card-3 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-4 {
+	
+	}
+
+	.index-card-4 a{
+		margin-top:50%;
+	}
+
+	.index-card-4 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-5 {
+	
+	}
+
+	.index-card-5 a{
+		margin-top:50%;
+	}
+
+	.index-card-5 p{
+		top:50%; 
+		width:80%;
+	}
+	
+	.index-card-6 {
+	
+	}
+
+	.index-card-6 a{
+		margin-top:50%;
+	}
+
+	.index-card-6 p{
 		top:50%; 
 		width:80%;
 	}
