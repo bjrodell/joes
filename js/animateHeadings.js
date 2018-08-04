@@ -14,6 +14,7 @@ $(document).ready(function() {
 	$('.page-content .card').each(function() {
 	   if (isScrolledIntoView(this) === true) {
         $(this).addClass('fadeInUp');
+		$(this).find('.card-header').removeClass('d-none');
 		$(this).find('.card-body').removeClass('d-none');
 		$(this).find('.card-title').addClass('bounceInLeft');
 		$(this).find('li').addClass('bounceInLeft');
