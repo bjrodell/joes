@@ -1,6 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+* {
+	margin:0;
+	padding:0;
+}
+
 
 /*** color pallette  **********************
 
@@ -52,8 +57,8 @@ a:hover {
 /***************************** HEADER STYLES ******************************/
 
 .jumbotron img {
-	max-width:90%;
-	margin-left:5%;
+	max-width:100%;
+	
 }
 
 .jumbotron {
@@ -61,7 +66,6 @@ a:hover {
 }
 
 .jumbotron .container {
-	height:400px;  
 }
 
 /***************************** FOOTER STYLES *******************************/
@@ -83,6 +87,14 @@ footer p {
 	margin-bottom:0;
 }
 
+.social-foot{
+	font-size: 2.5em;
+}
+
+.fa{
+	text-decoration: none;
+}
+
 /****************************** CARD STYLES ********************************/
 
 .card{
@@ -99,17 +111,6 @@ footer p {
 	border-radius:10px;
 }
 
-.img-overlay {
-    position: relative;
-	color: blue;
-	background-color:  rgba(0,0,0, 0.5);
-	border-style: solid;
-    border-color: gray;
-	border-width: 1px;
-	padding: 10px;
-	border-radius: 15px;
-}
-
 .img-overlay a {
 	position:relative;
 }
@@ -120,6 +121,10 @@ footer p {
 .navbar-nav {
 	text-align: center;
 	background-color:#ffffff;
+}
+
+.nav-item{
+	line-height: 35px;
 }
 
 /**************************** CONTACT US FORM *****************************/
@@ -185,6 +190,134 @@ input[type=text], input[type=email], select {
 
 .delay-8 {
 	animation-delay:2s;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+	@media screen and (min-width: 576px) { 
+
+	.form-check-input{
+		margin-left:5%;
+	}
+	
+	.btn{
+		top: -40px;
+		z-index: 2000;
+	
+	}
+	
+	.jumbotron {
+	background-color:#ffffff;
+	
+	height:400px;"
+	}
+
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+	@media screen and (min-width: 992px) { 
+	.jumbotron-fluid img {
+		
+	}
+	
+	.jumbotron {
+		background-color:#ffffff;
+		
+		height:500px;
+	}
+
+	.navbar-collapse li {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	
+    .card {
+		width:45%;
+		display:inline-block;
+	}
+	
+	footer .card {
+		width:100%;
+		padding-top:0%;
+	}
+}
+
+/* Large devices (desktops, 992px and up)*/
+	@media screen and (min-width: 992px) { 
+
+	.jumbotron-fluid img {
+		
+	}
+	
+	.jumbotron {
+		background-color:#ffffff;
+		
+		height:500px;
+	}
+
+
+	.navbar-collapse li {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	
+	
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media screen and (min-width: 1200px) { 
+.jumbotron-fluid img {
+		
+	}
+	
+	
+	
+	nav a {
+		
+		font-size:1.1em;
+	}
+	
+	.page-content {
+		
+		width:100%;
+		
+	}
+	
+	.card {
+		width:45%;
+		display:inline-block;
+	}
+	
+	.card-header h3 {
+		font-size:2.6em;
+	}
+	
+	footer h6 {
+		font-size:1.6em;
+	}
+	
+	footer h3 {
+		font-size:2.4em;
+	}
+	
+	footer p {
+		font-size:1.0em;
+	}
+	
+	footer .card {
+		width:100%;
+		padding-top:0%;
+	}
+	
+	footer, footer ul, footer .card {
+		max-height:150px;
+	}
+
 }
 
 
