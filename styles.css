@@ -18,7 +18,7 @@
 /*styles for header*/
 
 .jumbotron {
-	max-height:400px;
+	
 }
 
 
@@ -150,7 +150,7 @@ nav {
 }
 
 #nav{
-	background-color:#ffffff !important; /* needs to be same color as navbar-nav BG color*/
+	background-color:#ffffff; /* needs to be same color as navbar-nav BG color*/
 	padding: 0px;
 	
 }
@@ -196,37 +196,30 @@ form {
 	background: #d8e7ff;
 	box-shadow: 0 2px 8px -3px rgba(0, 0, 0, 0.2), 0 2px 20px -3px rgba(0, 0, 0, 0.19);
 	border-radius: 15px;
-
 	padding:5%;
-	display: inline-block;
 	z-index: 2100;
 }
 
 
 .form-control:focus{
-		border-color: #ffffff;  box-shadow: none; -webkit-box-shadow: none !important;
+		border-color: #ffffff;  box-shadow: none; -webkit-box-shadow: none;
 		border-width: 1px;
 } 
 		
 .has-error .form-control:focus{
-		box-shadow: none; -webkit-box-shadow: none !important;
+		box-shadow: none; -webkit-box-shadow: none;
 }
 
 input[type=text], input[type=email], select {
 	margin-bottom: 13px;
     padding: 8px 10px;
-    display: inline-block;
     box-shadow: 3px 3px 3px  #aaa;
     border-radius: 10px;
 }
 
-input[type=checkbox] { 
-  transform: absolute;
-  }
 
-label{
-	margin-bottom: 0px !important;
-}
+
+
 
 /*********** mobile specific stylesheet ******
 
