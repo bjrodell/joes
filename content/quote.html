@@ -115,21 +115,18 @@
 						</div>
 						
 						<div class="form-row">
-							<div class="col text-left">
-								<label for="cityinput" class="">City:</label>
-								<input id="cityinput" class=" form-control" type="text" name="clientcity"maxlength="70" required>
+							<div class="col-6 text-left">
+								<label for="cityinput" class="form-label">City:</label>
+								<input id="cityinput" class=" form-control" type="text" name="clientcity" maxlength="70" required>
 							</div>
 							<div class="col-2 text-left" >
-								
-									<label for="stateinput" class=" form-label" >State:</label>
-									<input id="stateinput" class=" form-control"  type="text" name="clientstate"maxlength="2" required>
-								
-								
+								<label for="stateinput" class=" form-label" >State:</label>
+								<input id="stateinput" class=" form-control"  type="text" name="clientstate"maxlength="2" required>
 							</div>
-						<div class="col-3 text-left" >
-									<label for="stateinput" class=" form-label">Zip:</label>
-									<input id="zipinput" class=" form-control"  type="text" name="clientzip"maxlength="10" required>
-								</div>
+							<div class="col-3 text-left" >
+								<label for="stateinput" class=" form-label">Zip:</label>
+								<input id="zipinput" class=" form-control"  type="text" name="clientzip"maxlength="10" required>
+							</div>
 								
 						</div>
 						<div class="form-row">
@@ -145,39 +142,31 @@
 				<div class="form-group">
 					<legend><h3 align="center">What type of services are you looking for?</h3></legend>
 						
-					  <div class="form-row" >
-
+					  <div class="form-row">
 							<input type="hidden" name="drivewayrepair" value="No">
+							<input class="form-check-input col-1" id="drivewayrepairinput" type="checkbox" name="drivewayrepair" value="Yes">
 							<div class="col-2"></div>
-							<div class="col-1"></div>
-							<input class="form-check-input col-3" id="drivewayrepairinput" type="checkbox" name="drivewayrepair" value="Yes">
 							<label for="drivewayrepairinput" class="col-3 form-check-label" id="drivewayrepairlabel"> Driveway Repair</label>
 						</div>
 						
 						<div class="form-row">
 							<input type="hidden" name="emergencyroadside" value="No">
+							<input class="form-check-input col-1" id="emergencyinput" type="checkbox" name="emergencyroadside" value="Yes">
 							<div class="col-2"></div>
-							
-							<div class="col-1"></div>
-							<input class="form-check-input col-3" id="emergencyinput" type="checkbox" name="emergencyroadside" value="Yes">
 							<label for="emergencyinput" class="col-3 form-check-label" id="emergencyroadsidelabel">Emergency Roadside</label>
 						</div>
   						
 						<div class="form-row">
-							<input type="hidden" name="pickup" value="No">
+							<input type="hidden" class="col-1" name="pickup" value="No">
+							<input class="form-check-input col-1" id="pickupinput" type="checkbox" name="pickup" value="Yes">
 							<div class="col-2"></div>
-							
-							<div class="col-1"></div>
-							<input class="form-check-input col-3" id="pickupinput" type="checkbox" name="pickup" value="Yes">
 							<label for="pickupinput" class="col-3 form-check-label" id="emergencyroadsidelabel">Pick Up/Drop Off Service
 						</div>
 						
 						<div class="form-row">
-							<div class="col-2"></div>
 							<input type="hidden" name="other" value="No">
-							
-							<div class="col-1"></div>
-							<input class="form-check-input col-3" id="otherinput" type="checkbox" name="other" value="Yes">
+							<input class="form-check-input col-1" id="otherinput" type="checkbox" name="other" value="Yes">
+							<div class="col-2"></div>
 							<label for="otherinput" class="col-3 form-check-label" id="otherlabel">Other</label>
 						</div>
 				</div><!--closes form-group-->

@@ -150,12 +150,17 @@ form {
 }
 
 input[type=text], input[type=email], select {
-    margin:1%;
-	margin-top:8%;
     padding: 8px 10px;
-    display: inline-block;
     box-shadow: 3px 3px 3px  #aaa;
     border-radius: 10px;
+}
+
+.form-check-input {
+	margin-left:13%;
+}
+
+.form-check-label {
+	margin-left:21%;
 }
 
 /************************* ANIMATION DELAYS **********************************/
@@ -195,23 +200,14 @@ input[type=text], input[type=email], select {
 /* Small devices (landscape phones, 576px and up)*/
 	@media screen and (min-width: 576px) { 
 
-	.form-check-input{
-		margin-left:5%;
-	}
-	
 	.btn{
 		top: -40px;
 		z-index: 2000;
-	
 	}
 	
 	.jumbotron {
-	background-color:#ffffff;
-	
-	height:400px;"
+		background-color:#ffffff;
 	}
-
-
 }
 
 /* Medium devices (tablets, 768px and up)*/
