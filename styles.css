@@ -146,6 +146,7 @@
 /*styles for nav*/
 
 nav {
+
 	
 }
 
@@ -157,6 +158,9 @@ nav {
 
 .navbar-nav {
 	
+}
+.navbar-brand{
+	margin-right:0px;
 }
 
 .collapse, nav {
