@@ -24,9 +24,10 @@ $customer_zip = $_POST['clientzip'];
 $customer_email = $_POST['email'];
 $customer_phone = $_POST['phone'];
 	
-$driveway_repair = $_POST['drivewayrepair'];
-$emergency_roadside = $_POST['emergencyroadside'];
-$pickup = $_POST['pickup'];
+$tire_repair = $_POST['tire'];
+$air_conditioning = $_POST['airconditioning'];
+$transmission = $_POST['transmission'];
+$motor = $_POST['motor'];
 $other_reason = $_POST['other'];
 	
 $additional_comments = $_POST['comments'];
@@ -61,11 +62,11 @@ $email_message = "
 				 "<div><h4>Email: </h4>". "<div class='data'>". $customer_email. "</div></div>".
 				 "<div><h4>Phone: </h4>". "<div class='data'>". $customer_phone. "</div></div>".
 	
-				 "<div><h4>Driveway Repair: </h4>". "<div class='data'>". $driveway_repair. "</div></div>".
-				 "<div><h4>Emergency Roadside: </h4>". "<div class='data'>". $emergency_roadside. "</div></div>".
-				 "<div><h4>Pickup: </h4>". "<div class='data'>". $pickup. "</div></div>".
+				 "<div><h4>Tire Repair: </h4>". "<div class='data'>". $tire_repair. "</div></div>".
+				 "<div><h4>Air Conditioning: </h4>". "<div class='data'>". $air_conditioning. "</div></div>".
+				 "<div><h4>Transmission: </h4>". "<div class='data'>". $transmission. "</div></div>".
+				 "<div><h4>Motor Repair: </h4>". "<div class='data'>". $motor. "</div></div>".
 				 "<div><h4>Other Reason: </h4>". "<div class='data'>". $other_reason. "</div></div>".
-				 
 	
 				 "<div><h4>Comments: </h4>". "<div class='data'>". $additional_comments. "</div></div>".
 				 "</body>
