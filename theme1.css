@@ -20,10 +20,18 @@
 
 h1, h2, h3, h4 {
 	color:#080401;
+	font-family:poiret-one,sans-serif;
+	font-weight:900;
 }
 
 h5, h6 {
 	color:#d70504;
+	font-family:poiret-one,sans-serif;
+}
+
+/*************************** TEXT TAG STYLES *************************************/
+p, a, label, input {
+	font-family: rosario, sans-serif;
 }
 
 /***************************** LINK STYLES ************************************/
@@ -113,6 +121,10 @@ footer p {
 
 .img-overlay a {
 	position:relative;
+}
+
+.card-img-overlay, .card .container, .card-body, .container-fluid {
+	padding:0;
 }
 
 
@@ -208,6 +220,8 @@ input[type=text], input[type=email], select {
 	.jumbotron {
 		background-color:#ffffff;
 	}
+	
+	
 }
 
 /* Medium devices (tablets, 768px and up)*/
